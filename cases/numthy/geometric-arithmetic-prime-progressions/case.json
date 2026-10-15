@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "numthy.geometric-arithmetic-prime-progressions",
+  "title": "Enumerate geometric-arithmetic prime progressions",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-1203-2083-geometric-arithmetic-prime-progressions",
+    "kind": "paper",
+    "citation": "Sameen Ahmed Khan, Primes in Geometric-Arithmetic Progression, arXiv:1203.2083",
+    "url": "https://arxiv.org/abs/1203.2083",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3f56e050b6d573c9dd315f908d0da419b3dee5a7c895fe993c7115d90c96a581"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The ancillary Mathematica notebook scans `0 <= d <= 1000` for which `5, 5^2+d, ..., 5^5+4d` are prime. The translation repeats that finite search with Noether primality testing and checks its complete 17-value output."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.is_prime"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

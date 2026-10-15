@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "homalg.graded-minimal-free-resolution",
+  "title": "Compute a graded minimal free resolution and Betti table",
+  "domains": [
+    "homalg",
+    "commalg",
+    "linalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2404-12085-graded-minimal-free-resolution",
+    "kind": "paper",
+    "citation": "Janko Boehm, Wolfram Decker, and Frank-Olaf Schreyer, Commutative Algebra and Algebraic Geometry using OSCAR, arXiv:2404.12085",
+    "url": "https://arxiv.org/abs/2404.12085",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "31a07f0458e22b223abe40fc9aed00f72b6817f309c4f3c100fde97061bc142f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The five published quadratic relations are entered independently as a presentation of R/I. Noether constructs and certifies the minimal resolution and reproduces the paper's minimal Betti totals; no OSCAR transcript or source artifact is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "linalg.Matrix.from_rows",
+      "homalg.ModuleMonomialOrder.term_over_position",
+      "homalg.PresentedModule.minimal_free_resolution",
+      "homalg.FreeResolution.verify",
+      "homalg.FreeResolution.is_minimal",
+      "homalg.FreeResolution.graded_betti_table",
+      "homalg.GradedBettiTable.verify",
+      "homalg.GradedBettiTable.total"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 60,
+    "seed": null
+  }
+}

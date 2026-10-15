@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "commalg.meixner-sequence-recurrence",
+  "title": "Verify the generating-function recurrence for Meixner sequence A214615",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2605-03170-meixner-sequence-recurrence",
+    "kind": "paper",
+    "citation": "Tong Niu, A short proof of Mathar's 2013 recurrence conjecture for the Meixner sequence A214615, arXiv:2605.03170",
+    "url": "https://arxiv.org/abs/2605.03170",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "cf6cdb1c8dee5970494b4281b4785085bdbaffc1629476033e20251371f4d6fa"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper’s Meixner recurrence generates an exact prefix. Encoding its exponential generating polynomial in `Q[t]` makes the differential identity `(1+t^2)F′-(1-t)F=0` a coefficientwise Noether check."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.from_terms",
+      "commalg.Polynomial.derivative",
+      "commalg.Polynomial.coefficient"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "numthy.padic-newton-cube-root",
+  "title": "Compute a cube root of two by 5-adic Newton iteration",
+  "domains": ["numthy"],
+  "source": {
+    "intake_id": "arxiv-2604-16799-padic-newton-cube-root",
+    "kind": "paper",
+    "citation": "Douglas A. Torrance, Implementing p-adic numbers in Macaulay2 using its foreign function interface and FLINT, arXiv:2604.16799",
+    "url": "https://arxiv.org/abs/2604.16799",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "dc392017cfefadd136c00fd11586faba760ff320d63e037f4d72161fed0e3b60"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's field, precision, initial approximation, and Newton step are restated directly. The Macaulay2-to-FLINT transport is not part of the mathematical case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.PadicField.absolute_precision",
+      "numthy.PadicElement.inverse",
+      "numthy.PadicElement.valuation",
+      "numthy.PadicValuation.lower_bound",
+      "numthy.PadicElement.known_absolute_precision"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

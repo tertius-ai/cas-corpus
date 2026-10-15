@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "commalg.apollonius-circle-groebner-basis",
+  "title": "Certify a symbolic Apollonius-circle Groebner basis",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "github-mcs563-apollonius-rur-groebner",
+    "kind": "notebook",
+    "citation": "JazzTap/mcs563 commit 8cafb4330de63b08483f7af51b85578811c61256, Scraps/rur_sage.ipynb",
+    "url": "https://github.com/JazzTap/mcs563/blob/8cafb4330de63b08483f7af51b85578811c61256/Scraps/rur_sage.ipynb",
+    "license": "No license file found; mathematical input/output cited without notebook redistribution",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "18e8f46f3ee1a5d1900d105d130ca09732825c08825e5b86d5ee2a312004ae0b"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The notebook's four symbolic tangency equations and displayed four-element basis are restated as mathematics; no notebook code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

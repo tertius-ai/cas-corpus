@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "combin.basic-matroid-cryptomorphisms",
+  "title": "Recover matroid data and minors from a basis presentation",
+  "domains": [
+    "combin"
+  ],
+  "source": {
+    "intake_id": "arxiv-1511-04618-basic-matroid-cryptomorphisms",
+    "kind": "paper",
+    "citation": "Justin Chen, Matroids: A Macaulay2 package, arXiv:1511.04618",
+    "url": "https://arxiv.org/abs/1511.04618",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "e92b8c48c18acaf6c0742278236276bce4d4b65f1108f03d242c8904c0464e4d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's first four-element example is independently expressed through Noether's basis-defined matroid. The case checks the paper's ranks and circuits and derives two elementary minors. No paper or repository code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Matroid.from_bases",
+      "combin.Matroid.ground_set",
+      "combin.Matroid.bases",
+      "combin.Matroid.rank",
+      "combin.Matroid.circuits",
+      "combin.Matroid.delete",
+      "combin.Matroid.contract"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

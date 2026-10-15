@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.imaginary-quadratic-endomorphism-matrix",
+  "title": "Certify an imaginary-quadratic endomorphism matrix",
+  "domains": ["linalg", "numthy", "commalg"],
+  "source": {
+    "intake_id": "github-endomorphisms-imaginary-quadratic-matrix",
+    "kind": "repository",
+    "citation": "Edgar Costa, Nicolas Mascot, Jeroen Sijsling, and John Voight, Rigorous computation of the endomorphism ring of a Jacobian, Math. Comp. 88 (2019), arXiv:1705.09248; examples/Ex8.1.5.m at edgarcosta/endomorphisms commit 691d1c1ceaa7f6dd139a83fffa1c98d1d8c4a50a",
+    "url": "https://github.com/edgarcosta/endomorphisms",
+    "license": "GPL-2.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3d80f5cbd48e74106e420998737f0a83f0f90de5a580ffb568a78003750fb2f1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The displayed matrix over Q(sqrt(-3)) is transcribed from the Magma example. Noether independently computes its determinant and characteristic polynomial."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.det", "linalg.Matrix.charpoly"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

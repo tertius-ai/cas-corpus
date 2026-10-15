@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.degree-seven-permutation-witnesses",
+  "title": "Verify degree-seven permutation-polynomial witnesses over GF(11)",
+  "domains": ["numthy", "commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1812-02080-degree7-permutation-polynomials",
+    "kind": "paper",
+    "citation": "A classification of permutation polynomials of degree 7 over finite fields, arXiv:1812.02080",
+    "url": "https://arxiv.org/abs/1812.02080",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "30c1791da770616bc62b5f3a7b5fb7fef5bcbf281d445fd48fde163d70345090"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The 25 normalized GF(11) coefficient tuples printed by the source are retained as witnesses. Each polynomial is verified directly on every field element; this case does not claim to rerun the classification's completeness search."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "commalg.PolynomialRing.generator", "commalg.Polynomial.evaluate"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

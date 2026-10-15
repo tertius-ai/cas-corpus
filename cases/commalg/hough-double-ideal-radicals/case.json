@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.hough-double-ideal-radicals",
+  "title": "Certify radical criteria for two Hough-transform families",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1202-1698-hough-double-ideal-radicals",
+    "kind": "paper",
+    "citation": "Mauro C. Beltrametti and Lorenzo Robbiano, An Algebraic Approach to Hough Transforms, arXiv:1202.1698",
+    "url": "https://arxiv.org/abs/1202.1698",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "e4d393c26ae574bb7ecec3e944c89d2beeaa9a67ebeaae82072ffda53fb1a6d8"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The two doubled coefficient ideals are entered from the paper's CoCoA example. Noether constructs and verifies both radicals and reproduces the positive and negative diagonal-membership results. Automatic construction of a Hough double ideal is not claimed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generators", "commalg.PolynomialRing.ideal", "commalg.Ideal.radical", "commalg.RadicalIdeal.verify", "commalg.RadicalIdeal.ideal"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

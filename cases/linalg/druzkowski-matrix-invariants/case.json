@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.druzkowski-matrix-invariants",
+  "title": "Compute rank and characteristic polynomial over Q(i)",
+  "domains": ["linalg", "numthy"],
+  "source": {
+    "intake_id": "arxiv-1503-08733-druzkowski-matrix-invariants",
+    "kind": "paper",
+    "citation": "Tuyen Trung Truong, Some approaches toward the Jacobian conjecture, arXiv:1503.08733",
+    "url": "https://arxiv.org/abs/1503.08733",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "7fbf572bbb8345c84df33ba357110938693f92166dc6b6f3ba9f7d68dd7b65dc"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's displayed 4-by-4 matrix is entered exactly over Q(i). Noether reproduces its rank and characteristic polynomial. This is a necessary source computation but does not claim the paper's radical-ideal certificate for Condition C1."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.NumberField.generator", "linalg.Matrix.from_rows", "linalg.Matrix.rank", "linalg.Matrix.charpoly"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

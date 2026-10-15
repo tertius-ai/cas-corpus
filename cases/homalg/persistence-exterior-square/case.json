@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.persistence-exterior-square",
+  "title": "Compute the underlying module of a persistence exterior square",
+  "domains": ["homalg", "commalg", "linalg", "topology"],
+  "source": {
+    "intake_id": "arxiv-1503-08266-persistence-exterior-square-underlying-module",
+    "kind": "paper",
+    "citation": "Leon Lampret, Tensor, Symmetric, Exterior, and Other Powers of Persistence Modules, arXiv:1503.08266",
+    "url": "https://arxiv.org/abs/1503.08266",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-25",
+    "sha256": "faf751b198a1ad9dd430d8c96258a363eb7845500f9928c485710d8c8ee0d073"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's barcode module is presented as R plus R/(t^3), R/(t^2), and R/(t), with R=Q[t]. Noether constructs its exterior square and certified annihilator and Fitting ideals identify the underlying module as R/(t^3), two copies of R/(t^2), and three copies of R/(t). Persistence intervals and their grading interpretation are not inferred by this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.exterior_power", "homalg.PresentedModulePower.verify", "homalg.PresentedModulePower.module", "homalg.PresentedModule.annihilator", "homalg.PresentedModule.fitting_ideal", "commalg.Ideal.groebner_basis"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

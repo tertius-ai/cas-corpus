@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "geometry.order-three-permutahedron",
+  "title": "The order-three permutahedron and its faces",
+  "domains": ["geometry", "combin"],
+  "source": {
+    "intake_id": "arxiv-2310-12687-order-three-permutahedron",
+    "kind": "paper",
+    "citation": "Viviane Pons, Combinatorics of the Permutahedra, Associahedra, and Friends, arXiv:2310.12687",
+    "url": "https://arxiv.org/abs/2310.12687",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "76dde7ba30953bc25817e216ebcfdf918abbcc94f6c921ed27fc8941c90f4993"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source definition is expressed independently as the convex hull of all coordinate permutations of (1,2,3). No source code is copied. The case checks only the elementary polytope and face enumeration, not the source's broader order and Hopf-algebra structures."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "geometry.Polytope.from_vertices",
+      "geometry.Polytope.ambient_dimension",
+      "geometry.Polytope.dimension",
+      "geometry.Polytope.vertices",
+      "geometry.Polytope.f_vector",
+      "geometry.Polytope.vertex_facet_incidence",
+      "geometry.Polytope.face_lattice",
+      "geometry.Polytope.face_lattice_covers",
+      "geometry.Polytope.verify"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

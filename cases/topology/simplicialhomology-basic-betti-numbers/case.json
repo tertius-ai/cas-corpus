@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "topology.simplicialhomology-basic-betti-numbers",
+  "title": "Compute elementary simplicial Betti numbers over exact fields",
+  "domains": ["topology", "homalg", "linalg"],
+  "source": {
+    "intake_id": "github-simplicialhomology-betti-numbers",
+    "kind": "repository",
+    "citation": "Naman T, SimplicialHomology commit da518624ff3fb4a89e29b0fc6c5de8f8451cf6ff, Tests/Homology.wlt",
+    "url": "https://github.com/zplus11/SimplicialHomology/",
+    "license": "MIT",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "a24dbde849af475f1138559fc10b335f503082a4e3c864201656930a83ed6d2e"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "Four named regression complexes are rebuilt from explicit facets. Their Betti tables are independently checked over Q and F2; no notebook or package code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "topology.SimplicialComplex.verify",
+      "topology.SimplicialComplex.dimension",
+      "topology.SimplicialComplex.betti_number",
+      "topology.SimplicialComplex.chain_complex",
+      "homalg.ChainComplex.verify",
+      "numthy.FiniteField.prime"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}
+

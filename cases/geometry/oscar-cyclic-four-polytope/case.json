@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "geometry.oscar-cyclic-four-polytope",
+  "title": "Recover the face vector of the cyclic four-polytope on eight vertices",
+  "domains": ["geometry", "combin"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-cyclic-four-polytope",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459; intro.ipynb at micjoswig/oscar-notebooks commit b904e9172ee169eac3b5ef8ad8b08d1d09faa82f",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The notebook constructs C(4,8). Noether independently builds the rational moment-curve realization and enumerates all face dimensions."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["geometry.Polytope.from_vertices", "geometry.Polytope.f_vector", "geometry.Polytope.face_lattice", "geometry.Polytope.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

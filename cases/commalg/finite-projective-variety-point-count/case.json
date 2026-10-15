@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "commalg.finite-projective-variety-point-count",
+  "title": "Count points on an intersection of quadrics over F5",
+  "domains": [
+    "commalg",
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-1606-05530-finite-projective-variety-points",
+    "kind": "paper",
+    "citation": "John Bamberg, Anton Betten, Philippe Cara, Jan De Beule, Michel Lavrauw, and Max Neunhoeffer, FinInG: a package for Finite Incidence Geometry, arXiv:1606.05530",
+    "url": "https://arxiv.org/abs/1606.05530",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "788ee4ec5baba795d0fd4cc93c91719049c7bc352bf62d5f9f62bb883ef05a60"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's two homogeneous quadrics are independently entered as a projective scheme over F5 and counted with Noether's certified enumerator. The explanatory prose and program are original; no paper source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.FiniteField.prime",
+      "commalg.ProjectiveSpace.closed_subscheme",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Scheme.point_count",
+      "numthy.PointCountCertificate.verify"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use CAS Corpus, please cite this repository."
+title: "CAS Corpus: executable computer-algebra problems for Noether"
+type: software
+authors:
+  - family-names: Antieau
+    given-names: Benjamin
+  - family-names: Manam
+    given-names: Deven
+version: 0.1.0
+date-released: 2026-10-15
+license: MIT
+repository-code: "https://github.com/tertius-ai/cas-corpus"

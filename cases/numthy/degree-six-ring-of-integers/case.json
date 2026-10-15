@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "numthy.degree-six-ring-of-integers",
+  "title": "Certifying the ring of integers of a degree-six number field",
+  "domains": [
+    "numthy",
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2409-18030-degree-six-ring-of-integers",
+    "kind": "repository",
+    "citation": "Alain Chavarri Villarello, RingOfIntegersProject, commit b2bfff66bb5354694df289dff1507f29a9271df2; companion data for Baanen, Chavarri Villarello, and Dahmen, Certifying rings of integers in number fields, arXiv:2409.18030",
+    "url": "https://github.com/alainchmt/RingOfIntegersProject",
+    "license": "Apache-2.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-25",
+    "sha256": "8098b57ed68c474397fe6fc69b8d53ec33c178e9e179a79200d885780ecbde43"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The defining polynomial and six-element certificate basis are translated from the Apache-2.0 repository snapshot. The solution independently asks Noether to validate the order, compute the maximal order, and prove equality; no repository code or paper prose is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generator",
+      "numthy.NumberField.order",
+      "numthy.NumberField.maximal_order",
+      "numthy.NumberField.discriminant",
+      "numthy.NumberFieldElement.characteristic_polynomial",
+      "numthy.NumberFieldOrder.index",
+      "numthy.NumberFieldOrder.is_maximal"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

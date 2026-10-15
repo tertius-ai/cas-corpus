@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.galois-orbit-cubic-independence",
+  "title": "Test cubics on a finite-field Galois orbit",
+  "domains": ["linalg", "numthy", "commalg"],
+  "source": {
+    "intake_id": "arxiv-2310-10361-galois-orbit-hypersurfaces",
+    "kind": "paper",
+    "citation": "Shamil Asgarli, Dragos Ghioca, and Zinovy Reichstein, Linear system of hypersurfaces passing through a Galois orbit, arXiv:2310.10361",
+    "url": "https://arxiv.org/abs/2310.10361",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "8a2c9ccf3e63cfae31fced946f70a0bc918a95fd816435a1edfce74e5da588a5"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The ancillary finite-field calculation is expressed as ten exact base-field determinants. A zero determinant detects a cubic through the conjugate orbit; the last two candidate points give independence."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.with_modulus", "numthy.FiniteFieldElement.coefficients", "linalg.Matrix.det"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

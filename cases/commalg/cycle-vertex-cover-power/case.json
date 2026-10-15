@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "commalg.cycle-vertex-cover-power",
+  "title": "Certify membership in the square of a cycle cover ideal",
+  "domains": ["commalg", "combin"],
+  "source": {"intake_id": "arxiv-2305-01940-cycle-vertex-cover-power", "kind": "paper", "citation": "Correction to: Powers of the vertex cover ideals, arXiv:2305.01940", "url": "https://arxiv.org/abs/2305.01940", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "591a803b5b756e3122fb1360f3270a0518d2af2c3211966ac46049f3c2777379"},
+  "translation": {"kind": "translation", "notes": "The five minimal vertex covers of the labelled 5-cycle are encoded as exponent vectors. Product-ideal membership certifies the displayed factorization."},
+  "noether": {"version": "0.3.2", "operations": ["commalg.PolynomialRing.monomial_ideal", "commalg.MonomialIdeal.product", "commalg.MonomialIdeal.contains_monomial"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

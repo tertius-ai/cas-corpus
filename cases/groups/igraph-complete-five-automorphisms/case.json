@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.igraph-complete-five-automorphisms",
+  "title": "Compute the automorphism group of K5",
+  "domains": ["groups", "combin"],
+  "source": {
+    "intake_id": "arxiv-2209-09145-complete-five-automorphisms",
+    "kind": "paper",
+    "citation": "Szabolcs Horvat et al., IGraph/M: graph theory and network analysis for Mathematica, arXiv:2209.09145; Tests/Tests.m at commit 8de23ab6b2dcab448ba13bffe4c3a864c54927e7",
+    "url": "https://arxiv.org/abs/2209.09145",
+    "license": "arXiv nonexclusive distribution license; companion repository GPL-3.0-or-later",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d687afb73fe785faa994d7c11029c1f4e15b755e845f6d2a309ab158fa5d146d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source assertion is independently expressed through Noether's graph automorphism and stabilizer operations; no Mathematica source is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Graph.automorphism_group", "groups.PermutationGroup.order", "groups.PermutationGroup.orbit_stabilizer", "groups.PermutationGroup.stabilizer"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

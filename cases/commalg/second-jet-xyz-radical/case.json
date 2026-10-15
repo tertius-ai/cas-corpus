@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.second-jet-xyz-radical",
+  "title": "Compute the radical and components of the second jet of xyz",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2108-06350-second-jet-xyz-radical",
+    "kind": "paper",
+    "citation": "Federico Galetto and Nicholas P. Iammarino, Computing with jets, arXiv:2108.06350",
+    "url": "https://arxiv.org/abs/2108.06350",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c9db432468c5cb91d072a73b7c157726d0fada55baf8b994e64d3a5cb98c4a42"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The three jet coefficients are expanded directly from x(t)y(t)z(t) modulo t^3. Noether certifies the published ten-generator squarefree radical and its ten minimal primes. A general jet-scheme constructor and local component multiplicities remain outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.ideal", "commalg.Ideal.radical", "commalg.RadicalIdeal.verify", "commalg.Ideal.minimal_primes", "commalg.MinimalPrimeDecomposition.verify", "commalg.Ideal.normal_form"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

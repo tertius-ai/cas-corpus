@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.foliation-singular-scheme-saturation",
+  "title": "Recover a foliation singular scheme by saturation",
+  "domains": ["commalg", "homalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2212-11845-foliation-singular-scheme-saturation",
+    "kind": "paper",
+    "citation": "Alan Muniz, p-forms from syzygies, arXiv:2212.11845",
+    "url": "https://arxiv.org/abs/2212.11845",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "da9f0f89d3af36d9aea3506375669525fc1dd4aa63261ee17417af52447ae5c3"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The curve, three points, and four vector-field coefficients are entered from the paper. Noether independently intersects their ideals and certifies that saturation of the six 2-by-2 minors gives exactly the same projective singular scheme. Differential-form and syzygy constructors remain outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.ideal", "commalg.Ideal.intersection", "commalg.Ideal.saturate", "commalg.Ideal.verify", "commalg.Ideal.normal_form"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

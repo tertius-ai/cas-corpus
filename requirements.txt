@@ -1,0 +1,2 @@
+# Noether v0.3.2 is source-only. Build the tagged source repository and run
+# tools/check_cases.py with that environment's Python interpreter; see README.

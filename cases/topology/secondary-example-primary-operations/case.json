@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "topology.secondary-example-primary-operations",
+  "title": "Compute primary-operation data for a secondary cohomology example",
+  "domains": ["topology", "homalg"],
+  "source": {
+    "intake_id": "arxiv-1206-4345-secondary-example-primary-operations",
+    "kind": "paper",
+    "citation": "Rocio Gonzalez-Diaz and Pedro Real, Geometric Objects and Cohomology Operations, arXiv:1206.4345",
+    "url": "https://arxiv.org/abs/1206.4345",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "7807550aa25a1ef694841b7e76a322ee8967ec073601c5a90a1c13733c6213f7"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The 19 maximal simplices are transcribed from the paper's detailed Mathematica example. Noether computes the mod-two cohomology and the primary Sq^2 input: H^2 has dimension four and Sq^2 vanishes on it. The paper's secondary Psi_2 value and chain-contraction evidence remain outside the current surface."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["topology.SimplicialComplex.verify", "topology.SimplicialComplex.betti_number", "topology.SimplicialComplex.cohomology_ring", "topology.SimplicialCohomologyRing.verify", "topology.SimplicialCohomologyRing.steenrod_square"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

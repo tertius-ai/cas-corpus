@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.evolution-algebra-isomorphism",
+  "title": "Decide an evolution-algebra isomorphism by Groebner basis",
+  "domains": ["commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-1004-1050-evolution-algebra-isomorphism",
+    "kind": "paper",
+    "citation": "J. M. Casas, M. Ladra, B. A. Omirov, and U. A. Rozikov, On evolution algebras, arXiv:1004.1050",
+    "url": "https://arxiv.org/abs/1004.1050",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "42f3b455b278302d493a1f95fbcbdbe5a41bd71d106bd6d8f2e50ccf1251d122"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The Mathematica equations for multiplication preservation, natural-basis orthogonality, and invertibility are restated over Q. Their Groebner basis is [1], certifying that the displayed E5 and E6 families are not isomorphic."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generator", "commalg.Ideal.groebner_basis", "commalg.Polynomial.is_one"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

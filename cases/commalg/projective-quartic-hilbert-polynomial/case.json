@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.projective-quartic-hilbert-polynomial",
+  "title": "Recover the Hilbert polynomial of a projective quartic curve",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2404-12085-projective-quartic-hilbert-polynomial",
+    "kind": "paper",
+    "citation": "Janko Boehm, Wolfram Decker, and Frank-Olaf Schreyer, Commutative Algebra and Algebraic Geometry using OSCAR, arXiv:2404.12085",
+    "url": "https://arxiv.org/abs/2404.12085",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "31a07f0458e22b223abe40fc9aed00f72b6817f309c4f3c100fde97061bc142f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The two homogeneous equations are entered independently. Noether verifies the projective dimension, degree, and Hilbert polynomial 4m. The source also reports smoothness; Noether 0.2 does not certify smoothness for this presentation, so that assertion is retained only as a blocker in intake."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.ProjectiveSpace.coordinate_ring", "commalg.ProjectiveSpace.closed_subscheme", "commalg.Scheme.dimension", "commalg.Scheme.degree", "commalg.Scheme.hilbert_polynomial"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.singular-locus-saturation",
+  "title": "Recover a diagonal singular locus by saturation",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2608-14271-singular-locus-saturation",
+    "kind": "paper",
+    "citation": "Estimation of calculation errors and resolution of singularities, arXiv:2608.14271",
+    "url": "https://arxiv.org/abs/2608.14271",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "5c0697958481feeefedbc7cb0665f754631b42908b891ec31b64e7e412b0b1d1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's n=2 Macaulay2 calculation is translated directly: form the polynomial and its Jacobian ideal, saturate away the coordinate boundary, and certify equality with the diagonal by mutual reduction."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.Polynomial.derivative", "commalg.Ideal.saturate", "commalg.Ideal.normal_form"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

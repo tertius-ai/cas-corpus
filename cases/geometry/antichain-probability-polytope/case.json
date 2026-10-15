@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "geometry.antichain-probability-polytope",
+  "title": "Probability-functions polytope of a three-element antichain",
+  "domains": [
+    "geometry",
+    "combin"
+  ],
+  "source": {
+    "intake_id": "arxiv-2502-01604-antichain-probability-polytope",
+    "kind": "paper",
+    "citation": "Jan Snellman, The Polytope of Probability Functions on a Finite Poset, arXiv:2502.01604",
+    "url": "https://arxiv.org/abs/2502.01604",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "a40f7745f1a0e0ebaaef5366e8aed8432006a51859855b4b3a74bcc654979ce5"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper identifies the three-antichain probability-functions polytope with a three-cube. The solution independently constructs the antichain and exact cube and verifies the claim through Noether; no ancillary Sage code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Poset.order",
+      "combin.Poset.covers",
+      "combin.Poset.leq",
+      "geometry.Polytope.from_vertices",
+      "geometry.Polytope.verify",
+      "geometry.Polytope.facets",
+      "geometry.Polytope.f_vector"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

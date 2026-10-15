@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "commalg.boolean-function-nonlinearity",
+  "title": "Compute the nonlinearity of a two-variable Boolean function",
+  "domains": ["commalg", "combin"],
+  "source": {"intake_id": "arxiv-1610-05932-boolean-function-nonlinearity", "kind": "paper", "citation": "An algorithmic approach using multivariate polynomials for the nonlinearity of Boolean functions, arXiv:1610.05932", "url": "https://arxiv.org/abs/1610.05932", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "9e2eb54031a9c9a68004791ffdf71c1594a9a55ebc566b1bc39650ed9cb4138c"},
+  "translation": {"kind": "adaptation", "notes": "The bounded function f=x1*x2+1 is evaluated exactly at F2^2 and compared with all eight affine Boolean functions."},
+  "noether": {"version": "0.3.2", "operations": ["numthy.FiniteField.prime", "commalg.PolynomialRing.generators", "commalg.Polynomial.evaluate"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "commalg.separating-rational-identity",
+  "title": "Verify a separating rational-function identity",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2404-10377-separating-rational-identity",
+    "kind": "paper",
+    "citation": "Manfred Buchacher, Separating Variables in Bivariate Polynomial Ideals: the Local Case, arXiv:2404.10377",
+    "url": "https://arxiv.org/abs/2404.10377",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "efcc575d9c0604339d5da59c2ad57f4f80153d04224662fea1c01cdec198d991"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's final separating identity is independently expressed as a cleared-denominator polynomial identity over Q. The explanatory prose and program are original; no paper or repository source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.Polynomial.__add__",
+      "commalg.Polynomial.__sub__",
+      "commalg.Polynomial.__mul__",
+      "commalg.Polynomial.__pow__"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

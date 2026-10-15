@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.vandermonde-general-position",
+  "title": "Certify general position from all maximal Vandermonde minors",
+  "domains": ["linalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-0709-1054-vandermonde-general-position",
+    "kind": "paper",
+    "citation": "Ralf Gerkmann, Mao Sheng, and Kang Zuo, Computational details on the disproof of modularity, arXiv:0709.1054",
+    "url": "https://arxiv.org/abs/0709.1054",
+    "license": "No license stated",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b7a51613f16a110a1a6de92da68a901eadc1fa40853b244770fd63b7da738b8b"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The displayed 4-by-8 matrix is entered from the paper's embedded Magma calculation. Noether computes every maximal minor, while the independent Vandermonde product formula checks each result. The later invariant Jacobian-ring and Higgs computations are outside this scoped case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.det"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

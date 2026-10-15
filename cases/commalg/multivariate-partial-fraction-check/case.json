@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.multivariate-partial-fraction-check",
+  "title": "Certify a multivariate partial-fraction identity",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "arxiv-2008-13194-partial-fraction-identity",
+    "kind": "paper",
+    "citation": "Janko Boehm, Marcel Wittmann, Zihao Wu, Yingxuan Xu, and Yang Zhang, IBP reduction coefficients made simple, arXiv:2008.13194",
+    "url": "https://arxiv.org/abs/2008.13194",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "903b7a64c654a92dd318d112fc79685f73de51d8803199f40c2db1345f37f1cc"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "Noether certifies the paper's complete displayed decomposition by clearing denominators in Q[x,y]. Choosing or minimizing a multivariate partial-fraction decomposition remains outside this scoped identity check."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generators", "commalg.Polynomial.is_zero"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

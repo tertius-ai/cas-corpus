@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "commalg.reducible-ring-normalization",
+  "title": "Normalize a reducible union of three affine planes",
+  "domains": [
+    "commalg",
+    "geometry"
+  ],
+  "source": {
+    "intake_id": "arxiv-math-0304007-reducible-ring-normalization",
+    "kind": "paper",
+    "citation": "Amelia Taylor, Methods for Computing Normalisations of Affine Rings, arXiv:math/0304007",
+    "url": "https://arxiv.org/abs/math/0304007",
+    "license": "arXiv assumed non-exclusive license to distribute (1991-2003)",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "8044727faf3755f964973fc69154c6a488e331b7ead7d62db711e474c7cbea01"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source equation is independently entered and normalized with Noether 0.2. The original program and prose are not redistributed; the case checks the three normal polynomial-ring components and their certified component maps."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.reduced_normalization",
+      "commalg.ReducedAffineNormalization.verify",
+      "commalg.ReducedAffineNormalization.component_count",
+      "commalg.AffineNormalization.verify",
+      "commalg.QuotientRing.dimension",
+      "commalg.QuotientRing.degree"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 60,
+    "seed": null
+  }
+}

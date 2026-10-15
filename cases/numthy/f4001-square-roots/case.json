@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.f4001-square-roots",
+  "title": "Verify two square roots in the field F_4001",
+  "domains": ["numthy"],
+  "source": {
+    "intake_id": "github-endomorphisms-f4001-square-roots",
+    "kind": "repository",
+    "citation": "Edgar Costa, Nicolas Mascot, Jeroen Sijsling, and John Voight, Rigorous computation of the endomorphism ring of a Jacobian, Math. Comp. 88 (2019), arXiv:1705.09248; examples/Ex5.2.17.m at edgarcosta/endomorphisms commit 691d1c1ceaa7f6dd139a83fffa1c98d1d8c4a50a",
+    "url": "https://github.com/edgarcosta/endomorphisms",
+    "license": "GPL-2.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3d80f5cbd48e74106e420998737f0a83f0f90de5a580ffb568a78003750fb2f1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The finite-field constants 2845 and 3102 are transcribed from the Magma example. Noether independently checks their defining square relations."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "numthy.FiniteField.__call__", "numthy.FiniteFieldElement.__mul__"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

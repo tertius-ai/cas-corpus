@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.generic-two-by-four-minors-resolution",
+  "title": "Resolve the generic two-by-four determinantal quotient",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2210-11433-generic-two-by-four-minors-resolution",
+    "kind": "paper",
+    "citation": "Amelie Schreiber, Multiparameter Persistent Homology-Generic Structures and Quantum Computing, arXiv:2210.11433",
+    "url": "https://arxiv.org/abs/2210.11433",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "287a28e39427e639fd72d8406f56cfdcf1179236e59d4f777558daa67b8fdae2"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "Noether resolves the six printed minors after correcting the source ring from six to eight variables. It certifies the Eagon-Northcott totals (1,6,8,3), exposing that the paper's printed (1,6,8,4,1) format does not resolve this generic determinantal quotient. Integral and persistence exactification remain outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

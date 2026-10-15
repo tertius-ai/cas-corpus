@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.satotateg3-septic-factorization",
+  "title": "Factor a septic polynomial from a genus-three Sato-Tate computation",
+  "domains": ["numthy", "commalg"],
+  "source": {
+    "intake_id": "arxiv-2106-13759-septic-factorization",
+    "kind": "paper",
+    "citation": "Francesc Fit\u00e9, Kiran S. Kedlaya, and Andrew V. Sutherland, Sato-Tate groups of abelian threefolds, arXiv:2106.13759; Section8/check_galois_groups.sage at kedlaya/satotateg3 commit 7cea3a3f97bdeae586bca598b1edfc374855b8db",
+    "url": "https://arxiv.org/abs/2106.13759",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "6ea0607de52d797971b86dd21af4517b6da0a12b53590ce39b24c8778dffc4e8"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The septic polynomial is transcribed from the Sage script. Noether independently factors it over Q and verifies the factorization certificate."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.Polynomial.factor", "commalg.PolynomialFactorization.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

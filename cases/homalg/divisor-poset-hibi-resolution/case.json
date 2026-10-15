@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.divisor-poset-hibi-resolution",
+  "title": "Resolve the Hibi quotient of the divisor poset of 12",
+  "domains": ["homalg", "commalg", "combin", "linalg"],
+  "source": {
+    "intake_id": "arxiv-1304-7999-divisor-poset-hibi-resolution",
+    "kind": "paper",
+    "citation": "David Cook II, Sonja Mapes, and Gwyneth Whieldon, Partially ordered sets in Macaulay2, arXiv:1304.7999",
+    "url": "https://arxiv.org/abs/1304.7999",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c40977cb1468a27bf44677629e76f4c0f33acff8a3cca743b4eb54d1820986e3"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "Noether constructs the divisor poset and the ten order ideals are enumerated from its order relation. The standard Hibi monomials are then used to present the quotient, whose certified minimal resolution reproduces the paper's Betti totals. A dedicated Hibi-ideal constructor is not claimed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Poset.leq", "combin.Poset.height", "combin.Poset.width", "homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "commalg.octic-quotient-degree-eight",
+  "title": "Certify degree-eight vanishing in an Artinian quotient",
+  "domains": ["commalg"],
+  "source": {"intake_id": "arxiv-2510-26850-octic-double-solid-quotient", "kind": "paper", "citation": "Rank 2 aCM and Ulrich bundles on Fano and Calabi--Yau double coverings of P3, arXiv:2510.26850", "url": "https://arxiv.org/abs/2510.26850", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "516b7768e2c388bf406fd1ca553317e7edb5978a404ef096b7431c0ee9864446"},
+  "translation": {"kind": "translation", "notes": "The five quartic generators are restated directly. Degree-eight vanishing is certified by enumerating standard monomials of the computed initial ideal."},
+  "noether": {"version": "0.3.2", "operations": ["commalg.PolynomialRing.ideal", "commalg.Ideal.initial_ideal", "commalg.MonomialIdeal.standard_monomials_of_degree", "commalg.Ideal.dimension", "commalg.Ideal.degree"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

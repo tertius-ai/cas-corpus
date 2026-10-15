@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "commalg.monomial-ideal-colon-witnesses",
+  "title": "Verify colon witnesses for a monomial associated prime",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2105-00835-monomial-ideal-colon-witnesses",
+    "kind": "paper",
+    "citation": "Siddhi Balu Ambhore and Indranath Sengupta, Colon structure of associated primes of monomial ideals, arXiv:2105.00835",
+    "url": "https://arxiv.org/abs/2105.00835",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b932919943da3386876763508df7b0e0c4d8bb4f9b696b94eb85cbe55958aeeb"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's printed Macaulay2 transcript is independently translated into exact ideal-colon calls. The transcript, rather than a conflicting prose rendering of one generator, determines the input. No source text or code is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.colon"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

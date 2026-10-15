@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "numthy.generalized-leibnitz-numbers",
+  "title": "Compute generalized Leibnitz numbers from their finite double sum",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-2011-13701-generalized-leibnitz-numbers",
+    "kind": "paper",
+    "citation": "Construction of a generalization of the Leibnitz numbers and their properties, arXiv:2011.13701",
+    "url": "https://arxiv.org/abs/2011.13701",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "9f8cbc01d78889eff9e176afd855600ca908e83963f120156520df75f2dd8653"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The Mathematica double sum is translated term for term with exact Noether rationals. Two bounded tables verify the paper’s beta-integral simplification, including the classical `(a,b)=(0,1)` specialization."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "RationalField.__call__"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

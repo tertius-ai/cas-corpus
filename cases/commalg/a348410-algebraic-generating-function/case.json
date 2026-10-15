@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "commalg.a348410-algebraic-generating-function",
+  "title": "Verify an algebraic generating function for A348410",
+  "domains": [
+    "commalg",
+    "combin"
+  ],
+  "source": {
+    "intake_id": "arxiv-2605-16553-a348410-algebraic-generating-function",
+    "kind": "paper",
+    "citation": "Tong Niu, An explicit algebraic generating function for OEIS A348410, arXiv:2605.16553",
+    "url": "https://arxiv.org/abs/2605.16553",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "aca4fcda5d4862aeec192e8d4071e3f524feaf25526fa88b3dfd0f9cc75db924"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The binomial formula supplies 31 exact coefficients. Noether then verifies the source’s quartic algebraic equation modulo `t^31` and its independent order-two recurrence."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.from_terms",
+      "commalg.Polynomial.coefficient"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

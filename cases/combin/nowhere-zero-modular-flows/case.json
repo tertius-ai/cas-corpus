@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "combin.nowhere-zero-modular-flows",
+  "title": "Enumerate nowhere-zero modular flows and verify orientation independence",
+  "domains": ["combin", "linalg", "commalg"],
+  "source": {
+    "intake_id": "github-nzflow-nowhere-zero-flows",
+    "kind": "repository",
+    "citation": "alilotfi90/nzflow-qubo commit f35cdb4eccefecbbdc2297413f63017db344047c, tests/test_correctness.py",
+    "url": "https://github.com/alilotfi90/nzflow-qubo",
+    "license": "No license file found; mathematical test data cited without source-code redistribution",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "448c22c8a1aa1c18aadaa3a97f7bfd8d9a8e32e00d6f9359f5a44c7ad409d314"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The small K4 and three-parallel-edge tests are restated as graph incidence equations over residue rings. QUBO encoding and external solvers are excluded."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.ResidueRing.zero",
+      "commalg.ResidueClass.is_zero"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

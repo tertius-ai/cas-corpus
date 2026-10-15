@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "numthy.rational-orbit-nonperiodicity",
+  "title": "Test a rational recurrence for periods through 1000 terms",
+  "domains": ["numthy"],
+  "source": {"intake_id": "arxiv-2306-11929-rational-orbit-nonperiodicity", "kind": "paper", "citation": "George Spahn and Doron Zeilberger, Experimenting with Discrete Dynamical Systems, arXiv:2306.11929", "url": "https://arxiv.org/abs/2306.11929", "license": "CC BY 4.0", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "c6725900bc631eef5ffdb49bdb4eefd3937253d7c3f9abcb1ec2845c40e136cf"},
+  "translation": {"kind": "translation", "notes": "The four-one initial condition and exact rational recurrence are restated directly and iterated for the source's 1000-term horizon."},
+  "noether": {"version": "0.3.2", "operations": ["RationalField.__call__"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

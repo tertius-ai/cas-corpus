@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.oscar-module-kernel",
+  "title": "Compute the kernel of a graded polynomial-module map",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2404-12085-module-kernel",
+    "kind": "paper",
+    "citation": "Janko Boehm, Wolfram Decker, and Frank-Olaf Schreyer, Commutative Algebra and Algebraic Geometry using OSCAR, arXiv:2404.12085",
+    "url": "https://arxiv.org/abs/2404.12085",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "31a07f0458e22b223abe40fc9aed00f72b6817f309c4f3c100fde97061bc142f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's rank-three to rank-two polynomial-module map is entered independently. Noether computes its kernel, verifies its module Groebner basis, and proves equality with the displayed principal syzygy. No source transcript is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Vector.from_values", "homalg.ModuleHomomorphism.kernel", "homalg.ModuleHomomorphism.apply", "homalg.Submodule.from_generators", "homalg.Submodule.is_equal", "homalg.Submodule.groebner_basis", "homalg.ModuleGroebnerBasis.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

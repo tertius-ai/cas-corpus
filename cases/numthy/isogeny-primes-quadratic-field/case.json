@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.isogeny-primes-quadratic-field",
+  "title": "Compute the maximal order of Q(sqrt(-127))",
+  "domains": ["numthy", "commalg"],
+  "source": {
+    "intake_id": "arxiv-2203-06009-quadratic-field-order",
+    "kind": "paper",
+    "citation": "Barinder S. Banwait and Maarten Derickx, Explicit isogenies of prime degree over number fields, arXiv:2203.06009; tests at isogeny-primes/isogeny-primes commit ef6638ddfd0f2d68c447f31d282b60c9a00c12f1",
+    "url": "https://arxiv.org/abs/2203.06009",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "f6e7caf7fc52859af2c0743ff2d671ce46a58f08f7c75f348586e8046a4d9055"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source suite repeatedly works over QuadraticField(-127). Noether constructs the same field from x^2+127 and certifies its maximal-order discriminant and equation-order index."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.NumberField.signature", "numthy.NumberField.discriminant", "numthy.NumberField.maximal_order", "numthy.NumberField.equation_order", "numthy.NumberFieldOrder.index"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

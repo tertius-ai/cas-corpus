@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.permutation-cyclic-sieving",
+  "title": "Verify cyclic sieving for descents and complementation",
+  "domains": ["combin", "groups", "commalg"],
+  "source": {
+    "intake_id": "arxiv-2402-16251-permutation-cyclic-sieving",
+    "kind": "paper",
+    "citation": "Cyclic sieving on permutations -- an analysis of maps and statistics in the FindStat database, arXiv:2402.16251",
+    "url": "https://arxiv.org/abs/2402.16251",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "270dc46d2f193a383cf660c7f5407edcda2c6b61d8b49ccc38c485a363eebd64"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The paper's width-one descent theorem is specialized to S4 under complementation. Exact enumeration produces 1+11q+11q^2+q^3; its values at the two roots of unity equal the fixed-point counts 24 and 0."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["groups.Permutation.from_images", "commalg.Polynomial.evaluate", "commalg.Polynomial.terms"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

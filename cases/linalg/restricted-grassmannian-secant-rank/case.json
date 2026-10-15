@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.restricted-grassmannian-secant-rank",
+  "title": "Compute a restricted Grassmannian secant rank",
+  "domains": ["linalg", "commalg", "geometry", "combin"],
+  "source": {
+    "intake_id": "arxiv-2211-01469-restricted-grassmannian-secant-rank",
+    "kind": "paper",
+    "citation": "Dalton Bidleman and Luke Oeding, Restricted Secant Varieties of Grassmannians, arXiv:2211.01469",
+    "url": "https://arxiv.org/abs/2211.01469",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "cd0d54acde8878c751bc2c4fc8af074b6bcc31b3d567e1897e510b687b18c2b6"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The optimized cofactor construction of the 35-by-35 Pluecker Jacobian for sigma^1_2(Gr(3,7)) is translated directly. Three explicit deterministic witnesses replace the source's unseeded random specialization and all have the reported cone dimension 20."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.rank"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

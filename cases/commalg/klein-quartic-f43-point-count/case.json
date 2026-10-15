@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.klein-quartic-f43-point-count",
+  "title": "Count F43-points on the Klein quartic",
+  "domains": ["commalg", "numthy", "geometry"],
+  "source": {
+    "intake_id": "arxiv-math-0502586-klein-quartic-point-count",
+    "kind": "paper",
+    "citation": "David Joyner and Amy Ksir, Modular representations on some Riemann--Roch spaces of modular curves X(N), arXiv:math/0502586",
+    "url": "https://arxiv.org/abs/math/0502586",
+    "license": "citation-only independent restatement; no source artifact redistributed",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "4e3c37ce88603ec43f6af758ed8f2b4f01007084393dd499712e83525ea7babd"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether independently enters the Klein quartic over F43 and certifies its 80 projective rational points by deterministic sharded enumeration. The source's Riemann--Roch spaces and modular representations remain outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "commalg.ProjectiveSpace.closed_subscheme", "commalg.PolynomialRing.ideal", "commalg.Scheme.point_count", "numthy.PointCountCertificate.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

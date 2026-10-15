@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "combin.polymake-vector-matroid-invariants",
+  "title": "Recover bases, circuits, Tutte data, deletion, and contraction",
+  "domains": ["combin", "geometry"],
+  "source": {
+    "intake_id": "github-polymake-vector-matroid-invariants",
+    "kind": "repository",
+    "citation": "polymake commit cd20bd56aade8019ff21f161461ee3f1dda95512, demo/apps_matroid.ipynb",
+    "url": "https://github.com/polymake/polymake/blob/cd20bd56aade8019ff21f161461ee3f1dda95512/demo/apps_matroid.ipynb",
+    "license": "GPL-2.0-or-later",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b9b825dc083e28c5defacec93333bd0af6892acc04add7ddc0583427d36345bf"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The first small vector matroid is supplied through its three displayed bases. Noether 0.2 covers bases, circuits, Tutte polynomial, deletion, and contraction; the tutorial's cocircuit and duality demonstrations are outside this bounded case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Matroid.from_bases",
+      "combin.Matroid.bases",
+      "combin.Matroid.circuits",
+      "combin.Matroid.delete",
+      "combin.Matroid.contract",
+      "combin.Matroid.tutte_polynomial"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

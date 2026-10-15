@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "numthy.rational-cubic-two-cycle",
+  "title": "Construct a rational cubic two-cycle from an elliptic point",
+  "domains": [
+    "numthy",
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2606-15109-rational-cubic-two-cycle",
+    "kind": "paper",
+    "citation": "Sompong Chuysurichay, Sawian Jaidee, Chatchawan Panraksa, and Teerapol Sukhonwimolmal, Rational 2-Cycles for x^3+bx+a and the Elliptic Family Y^2=X^3+4X^2+16t^2, arXiv:2606.15109",
+    "url": "https://arxiv.org/abs/2606.15109",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "ac3af2652bb280006e33a8ae43801975149d81896fe2d6538151b2b845ca71fb"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The program independently applies the paper's displayed rational dictionary to a Noether-computed elliptic multiple and verifies the resulting cubic cycle in exact rational arithmetic. No paper or repository source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.EllipticCurve.verify",
+      "numthy.EllipticCurve.point",
+      "numthy.EllipticCurvePoint.verify",
+      "numthy.EllipticCurvePoint.scalar_mul",
+      "numthy.EllipticCurvePoint.affine_coordinates"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

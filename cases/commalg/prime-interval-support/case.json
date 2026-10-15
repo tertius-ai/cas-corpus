@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "commalg.prime-interval-support",
+  "title": "Compute prime support in dyadic and short intervals by residue-ring arithmetic",
+  "domains": [
+    "commalg",
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-2607-22347-prime-interval-support",
+    "kind": "paper",
+    "citation": "Prime-Interval Algebras, arXiv:2607.22347",
+    "url": "https://arxiv.org/abs/2607.22347",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "0c7be3bcfee0db133ec6b97af675106d21073e2fe4c5afb5a3dee842a52beab3"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "For the worked interval `(7,14]`, the central-binomial modulus is 143. Expanding `(1+X)^143-1` over `Z/143Z` leaves degrees 11 and 13 below the truncation, and each coefficient’s additive order recovers its prime."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.ResidueRing.__call__",
+      "commalg.PolynomialRing.generator",
+      "commalg.Polynomial.terms"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 45,
+    "seed": null
+  }
+}

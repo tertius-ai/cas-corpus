@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.miura-elliptic-addition",
+  "title": "Reproduce an exact Miura elliptic-curve addition",
+  "domains": ["numthy", "commalg"],
+  "source": {
+    "intake_id": "arxiv-1512-08040-miura-elliptic-addition",
+    "kind": "paper",
+    "citation": "Joe Suzuki, Miura: Divisor Class Group Arithmetic, arXiv:1512.08040",
+    "url": "https://arxiv.org/abs/1512.08040",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "0ffa4e803c17ec9bc89b0153b32c9232a7c13676f989dea3f4d4b9c7abaceaf7"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether directly models the elliptic curve y^2=x^3+3x used by the source transcript and reproduces the two-point divisor-class sum. The general Miura standard-basis algorithm and ideal representatives are not claimed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.EllipticCurve.verify", "numthy.EllipticCurve.point", "numthy.EllipticCurvePoint.__add__", "numthy.EllipticCurvePoint.verify", "numthy.EllipticCurvePoint.affine_coordinates"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

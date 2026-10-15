@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.diagonal-quadric-local-density-sums",
+  "title": "Evaluate local-density character sums modulo eight",
+  "domains": ["numthy", "combin"],
+  "source": {
+    "intake_id": "arxiv-2404-11489-diagonal-quadric-local-density-sums",
+    "kind": "paper",
+    "citation": "Cameron Wilson, Asymptotics for Local Solubility of Diagonal Quadrics Over a Split Quadric Surface, arXiv:2404.11489",
+    "url": "https://arxiv.org/abs/2404.11489",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "872624cbcf0bcb81e99ecd386abe2b438602d70bcc2737b5b73093af4759f6e1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Appendix B's 256 unit tuples modulo eight are enumerated exactly. The two displayed congruence sets and their signed Jacobi-character sums are evaluated, including all six stated coordinate permutations."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.ResidueRing.__call__", "commalg.ResidueClass.is_unit"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

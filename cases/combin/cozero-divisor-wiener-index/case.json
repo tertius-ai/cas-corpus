@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "combin.cozero-divisor-wiener-index",
+  "title": "Compute Wiener indices of cozero-divisor graphs of finite rings",
+  "domains": [
+    "combin",
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2210-01570-cozero-divisor-wiener-index",
+    "kind": "paper",
+    "citation": "Wiener index of the Cozero-divisor graph of a finite commutative ring, arXiv:2210.01570",
+    "url": "https://arxiv.org/abs/2210.01570",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "f91417269880539e6336b88b6bf4fc9899b79def4c2c0d94fe81a7182e2dcc61"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Principal ideals in `Z/nZ` are encoded by their gcd with `n`; two vertices are adjacent exactly when these ideals are incomparable. Noether shortest paths reproduce the paper’s tabulated value `2954`."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Graph.shortest_path",
+      "combin.ShortestPath.distance",
+      "combin.Graph.connected_components"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 45,
+    "seed": null
+  }
+}

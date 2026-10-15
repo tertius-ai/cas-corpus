@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.oscar-four-cube-automorphisms",
+  "title": "Compute the facet automorphism group of the four-cube",
+  "domains": ["groups", "geometry", "combin"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-four-cube-automorphisms",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459; combinatorial-automorphisms.ipynb at micjoswig/oscar-notebooks commit b904e9172ee169eac3b5ef8ad8b08d1d09faa82f",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The four facet permutations printed by the companion notebook are entered as exact images. Noether independently constructs the generated group and computes its order and abelianization."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["groups.Permutation.from_images", "groups.PermutationGroup.from_generators", "groups.PermutationGroup.order", "groups.PermutationGroup.is_transitive", "groups.PermutationGroup.abelianization_invariant_factors"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

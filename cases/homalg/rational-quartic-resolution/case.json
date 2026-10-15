@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.rational-quartic-resolution",
+  "title": "Resolve a rational quartic curve over F32003",
+  "domains": ["homalg", "commalg", "numthy", "geometry", "linalg"],
+  "source": {
+    "intake_id": "arxiv-math-9807170-rational-quartic-resolution",
+    "kind": "paper",
+    "citation": "Gregory G. Smith, Computing Global Extension Modules for Coherent Sheaves on a Projective Scheme, arXiv:math/9807170",
+    "url": "https://arxiv.org/abs/math/9807170",
+    "license": "citation-only independent restatement; no source artifact redistributed",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "1efff8f2aabdeeb248e1cc43694a4b477b347d8f5924a695083e419c1e0ea428"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether computes and verifies the ordinary minimal graded resolution of the rational quartic's homogeneous coordinate ring over the source field. Computing global extension modules for coherent sheaves remains the paper-level blocker."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

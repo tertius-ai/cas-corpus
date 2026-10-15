@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.oscar-k4-graphic-matroid",
+  "title": "Compute the Tutte polynomial of the K4 graphic matroid",
+  "domains": ["combin", "commalg"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-k4-graphic-matroid",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459; intro.ipynb at micjoswig/oscar-notebooks commit b904e9172ee169eac3b5ef8ad8b08d1d09faa82f",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The sixteen spanning-tree bases of the complete graph K4 are entered explicitly. Noether constructs the graphic matroid and computes the notebook's Tutte polynomial."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Matroid.from_bases", "combin.Matroid.rank", "combin.Matroid.tutte_polynomial"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

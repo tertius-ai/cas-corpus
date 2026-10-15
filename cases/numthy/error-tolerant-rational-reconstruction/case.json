@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "numthy.error-tolerant-rational-reconstruction",
+  "title": "Reconstruct a rational number despite bad modular residues",
+  "domains": [
+    "numthy",
+    "linalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-1702-06920-error-tolerant-rational-reconstruction",
+    "kind": "paper",
+    "citation": "Janko Böhm, Wolfram Decker, Claus Fieker, Santiago Laplagne, and Gerhard Pfister, Bad Primes in Computational Algebraic Geometry, arXiv:1702.06920",
+    "url": "https://arxiv.org/abs/1702.06920",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "15e8501567ff6f53195bdb551cc415beaa15f98db9f73c23572219f689420cd6"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source changes the residue modulo 5 while retaining the modulo 7 and 101 data, giving 2711 modulo 3535. Two-dimensional Gauss reduction returns `(25,30)`, whose common bad factor cancels to `5/6`."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.det"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.hadamard-m-polynomial-table",
+  "title": "Expand the Hadamard m-polynomial table at length six",
+  "domains": ["commalg", "linalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1307-5777-hadamard-m-polynomials",
+    "kind": "paper",
+    "citation": "Generalizing Krawtchouk polynomials using Hadamard matrices, arXiv:1307.5777",
+    "url": "https://arxiv.org/abs/1307.5777",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d0b8861a0cff5fd75080de5fd02c1eb954cfa9c78f0989b864aa625bdb3a4216"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The Mathematica generator for the two-by-two Hadamard matrix at n=6 is formed in Z[z0,z1]. Exact coefficient extraction, preserving the source's displayed exponent-label convention, reconstructs the complete published seven-by-seven m-polynomial table."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generator", "commalg.Polynomial.coefficient", "linalg.Matrix.from_rows"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

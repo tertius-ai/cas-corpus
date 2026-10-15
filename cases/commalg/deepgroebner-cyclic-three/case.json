@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "commalg.deepgroebner-cyclic-three",
+  "title": "Verify a deterministic cyclic-three Groebner regression",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "github-deepgroebner-buchberger-regression",
+    "kind": "repository",
+    "citation": "Dylan Peifer, deepgroebner commit 94f3183efd290a400ab97908e52ac04de7b259de, tests/test_buchberger.py",
+    "url": "https://github.com/dylanpeifer/deepgroebner",
+    "license": "GPL-3.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3ba9426e0fba3d7bb5c40b2e42970c20c86fcd1e975c47561e651bc53516d67d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The small cyclic-three benchmark ideal and expected reduced basis are restated as mathematics over F_32003. No implementation or test code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.FiniteField.prime",
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}
+

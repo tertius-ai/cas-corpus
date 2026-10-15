@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.bivariate-monomial-power-growth",
+  "title": "Count minimal generators of bounded powers of a bivariate monomial ideal",
+  "domains": ["commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-2503-21466-bounded-monomial-power-growth",
+    "kind": "paper",
+    "citation": "Jutta Rath and Roswitha Rissner, Minimal generating sets of large powers of bivariate monomial ideals, arXiv:2503.21466",
+    "url": "https://arxiv.org/abs/2503.21466",
+    "license": "Creative Commons Attribution 4.0 International",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "74e1a760bdeec8daa5760c0c80ad35cb1ac252776c1252dfa6ab96e9b917a170"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether forms powers 3 through 15 of the concrete bivariate monomial ideal and verifies their minimal-generator counts directly. This bounded experiment illustrates the source's eventual-growth problem without claiming its general structural theorem or arbitrary-scale performance."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.monomial_ideal", "commalg.MonomialIdeal.pow", "commalg.MonomialIdeal.minimal_generators", "commalg.MonomialIdeal.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

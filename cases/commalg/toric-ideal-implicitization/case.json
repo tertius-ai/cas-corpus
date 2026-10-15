@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "commalg.toric-ideal-implicitization",
+  "title": "Implicitize monomial curves and the quadratic Veronese map",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1611-07306-toric-ideal-implicitization",
+    "kind": "paper",
+    "citation": "John Abbott and Anna Maria Bigatti, Groebner Bases for Everyone with CoCoA-5 and CoCoALib, arXiv:1611.07306",
+    "url": "https://arxiv.org/abs/1611.07306",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b8afb61c13c4a931d8377a4eeecfec16046153571ec0dd14fabb4de6a6dfbe53"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's exponent rows and quadratic Veronese parametrization are restated as elimination ideals. Mutual normal forms certify the familiar implicit equations without copying CoCoA code."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.eliminate",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

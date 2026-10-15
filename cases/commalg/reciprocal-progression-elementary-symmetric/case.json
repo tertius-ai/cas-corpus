@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "commalg.reciprocal-progression-elementary-symmetric",
+  "title": "An elementary symmetric value of reciprocal integers",
+  "domains": [
+    "commalg",
+    "numthy",
+    "combin"
+  ],
+  "source": {
+    "intake_id": "arxiv-1311-1389-reciprocal-progression-elementary-symmetric",
+    "kind": "paper",
+    "citation": "Chunlin Wang and Shaofang Hong, The elementary symmetric functions of reciprocal arithmetic progressions, arXiv:1311.1389",
+    "url": "https://arxiv.org/abs/1311.1389",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "274bff73503fd3d2bcfd917cd9abc28947916a7f812c09d3ea699f033212aa42"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's exceptional value S_(1,1)(3,2)=1 is independently computed as a coefficient of the generating polynomial for elementary symmetric functions. The explanatory prose and program are original; no paper source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "RationalField.__call__",
+      "commalg.PolynomialRing.generator",
+      "commalg.Polynomial.__mul__",
+      "commalg.Polynomial.coefficient"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

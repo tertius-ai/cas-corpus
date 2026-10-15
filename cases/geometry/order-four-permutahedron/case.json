@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "geometry.order-four-permutahedron",
+  "title": "Construct the order-four permutahedron and enumerate its faces",
+  "domains": ["geometry", "combin"],
+  "source": {
+    "intake_id": "arxiv-2310-12687-order-four-permutahedron",
+    "kind": "paper",
+    "citation": "Viviane Pons, Combinatorics of the Permutahedra, Associahedra, and Friends, arXiv:2310.12687",
+    "url": "https://arxiv.org/abs/2310.12687",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "76dde7ba30953bc25817e216ebcfdf918abbcc94f6c921ed27fc8941c90f4993"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The convex hull of all permutations of (1,2,3,4) is reconstructed directly. Noether verifies its dimension and complete face count; plotting is omitted."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "geometry.Polytope.from_vertices",
+      "geometry.Polytope.verify",
+      "geometry.Polytope.ambient_dimension",
+      "geometry.Polytope.dimension",
+      "geometry.Polytope.vertices",
+      "geometry.Polytope.f_vector",
+      "geometry.Polytope.face_lattice"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

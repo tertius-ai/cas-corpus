@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.square-slack-ideal",
+  "title": "Compute the saturated slack ideal of a square",
+  "domains": ["commalg", "linalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2003-07382-square-slack-subcomputation",
+    "kind": "paper",
+    "citation": "Antonio Macchia and Amy Wiebe, Slack Ideals in Macaulay2, arXiv:2003.07382",
+    "url": "https://arxiv.org/abs/2003.07382",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "6520df3f1b43753bb6055e0742865dedaa3d9dcd2e486ac561e9c7988fad4283"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The square's symbolic slack matrix is entered directly. Noether computes its determinant and certifies that saturation by all eight variables leaves the published principal binomial ideal unchanged. General face-lattice-to-slack-matrix construction remains outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.det", "commalg.PolynomialRing.ideal", "commalg.Ideal.saturate", "commalg.Ideal.verify", "commalg.Ideal.normal_form"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

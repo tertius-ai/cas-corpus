@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "commalg.d222-hyperdeterminant",
+  "title": "Recover the 2 x 2 x 2 hyperdeterminant by elimination",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-d222-hyperdeterminant",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459; D222Computation.jlcon",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's generic trilinear form and elimination are independently expressed with short coefficient names. The published twelve-term result is asserted exactly; no source code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.Polynomial.derivative",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.eliminate",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form",
+      "commalg.Polynomial.nonzero_term_count",
+      "commalg.Polynomial.homogeneous_degree"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}
+

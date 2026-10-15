@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "numthy.hodge-chern-orders",
+  "title": "Compute the arithmetic factors bounding top Hodge Chern-class orders",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-math-0302291-hodge-chern-orders",
+    "kind": "paper",
+    "citation": "The order of the top Chern class of the Hodge bundle on the moduli space of abelian varieties, arXiv:math/0302291",
+    "url": "https://arxiv.org/abs/math/0302291",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "fe43869a7f940296934333d832eabd302857b5858ffebb28b9d3c2a394438071"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The implementation follows the paper’s prime-power divisibility characterization of `n_g`, then reproduces its four-value example exactly."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.is_prime"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "combin.weak-order-tamari-posets",
+  "title": "Compare the order-three weak order and Tamari lattice",
+  "domains": ["combin", "groups", "geometry"],
+  "source": {
+    "intake_id": "github-hdr-small-permutahedron-tamari-posets",
+    "kind": "notebook",
+    "citation": "Viviane Pons, HDR-notebooks commit 141778789ca2b4dfe7af12d702be8a0de79be70b, Chapters 1 and 2",
+    "url": "https://github.com/VivianePons/HDR-notebooks",
+    "license": "GPL-2.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "6da5dc471a769ceab70649925e353d95cb16a5e74d4e01208f00c3e0e80ad7b9"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The small posets are reconstructed from inversion-set inclusion and the five Tamari cover relations. Plotting and larger interactive examples are omitted."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Poset.covers",
+      "combin.Poset.height",
+      "combin.Poset.width",
+      "combin.Poset.is_lattice"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

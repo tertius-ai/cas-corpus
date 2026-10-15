@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.cubic-discriminant-matrix-factorization",
+  "title": "Verify a matrix factorization of the cubic discriminant",
+  "domains": ["linalg", "commalg"],
+  "source": {
+    "intake_id": "arxiv-2209-03375-cubic-discriminant-matrix-factorization",
+    "kind": "paper",
+    "citation": "Eleonore Faber, Colin Ingalls, Simon May, and Marco Talarico, Matrix Factorizations of the discriminant of S_n, arXiv:2209.03375",
+    "url": "https://arxiv.org/abs/2209.03375",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "e3aef33520479d28ad015326fefbd165ad4f2f0b10e0c2273d7e4db148c90b69"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's complete 3-by-3 S1 x S2 example is entered over Q[s1,s2,s3]. Noether verifies both matrix products against the classical cubic discriminant. Constructing the factorization from Specht modules remains outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.__matmul__", "linalg.Matrix.identity"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

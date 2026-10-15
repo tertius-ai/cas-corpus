@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.signed-ideal-intersection",
+  "title": "Verify signed generators of a three-ideal intersection",
+  "domains": ["commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-2604-15691-signed-ideal-intersection",
+    "kind": "paper",
+    "citation": "Marco Aldi, Sergio Da Silva, and Daniele Grandini, Tensorial Constraints for Commuting Endomorphisms of the Generalized Tangent Bundle, arXiv:2604.15691",
+    "url": "https://arxiv.org/abs/2604.15691",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "181b3edbb6e5cbbdda4fdb08cccc993d9746d35d881cbbac43bbdb3156eff914"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The complete N=6 Macaulay2 loop is translated directly. For all 64 signatures, mutual Groebner reduction proves that the proposed quadratic/cubic generators equal the intersection of the three signed linear ideals."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.Ideal.intersection", "commalg.Ideal.normal_form", "commalg.Polynomial.is_zero"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 90, "seed": null}
+}

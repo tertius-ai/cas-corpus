@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.igraph-grid-spanning-trees",
+  "title": "Count the spanning trees of the two-by-three grid",
+  "domains": ["combin", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2209-09145-grid-spanning-trees",
+    "kind": "paper",
+    "citation": "Szabolcs Horvát et al., IGraph/M: graph theory and network analysis for Mathematica, arXiv:2209.09145; IGSpanningTreeCount tests at szhorvat/IGraphM commit 8de23ab6b2dcab448ba13bffe4c3a864c54927e7",
+    "url": "https://arxiv.org/abs/2209.09145",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d687afb73fe785faa994d7c11029c1f4e15b755e845f6d2a309ab158fa5d146d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source test expects fifteen spanning trees for a 2-by-3 grid. Noether checks it using the exact reduced-Laplacian determinant."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Graph.reduced_laplacian", "linalg.Matrix.from_rows", "linalg.Matrix.det"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

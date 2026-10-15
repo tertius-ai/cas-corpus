@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "topology.bowtie-complex-homology",
+  "title": "Compute the face counts and homology of a bowtie complex",
+  "domains": [
+    "topology"
+  ],
+  "source": {
+    "intake_id": "arxiv-2303-17659-bowtie-complex-homology",
+    "kind": "paper",
+    "citation": "Ben Hersey, Gregory G. Smith, and Alexandre Zotine, Simplicial complexes in Macaulay2, arXiv:2303.17659",
+    "url": "https://arxiv.org/abs/2303.17659",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "580c4412948267387aec852647a8c7230e43ca73993de6c87afa895633c64c84"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's two-facet bowtie is independently constructed as a Noether simplicial complex. The case checks its nonempty face counts and integral homology; source prose and code are not redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "topology.SimplicialComplex.verify",
+      "topology.SimplicialComplex.dimension",
+      "topology.SimplicialComplex.count",
+      "topology.SimplicialComplex.euler_characteristic",
+      "topology.SimplicialComplex.homology_invariants",
+      "homalg.FinitelyGeneratedAbelianGroup.verify"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

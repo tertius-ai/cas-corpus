@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "commalg.conic-line-characteristic-number",
+  "title": "Compute the characteristic number of a conic-line arrangement",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2312-12950-conic-line-characteristic-number",
+    "kind": "paper",
+    "citation": "Bounds for characteristic numbers of conic-line arrangements in the plane, arXiv:2312.12950",
+    "url": "https://arxiv.org/abs/2312.12950",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "47644fc7e28e83a16c09948084f03ed5748319652f2ed986a675962196a6edc0"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper records 21 lines, 21 conics, and 42, 252, and 189 points of multiplicities two, three, and four. Exact rational substitution refines its decimal `2.512` to `108/43`."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "RationalField.__call__"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

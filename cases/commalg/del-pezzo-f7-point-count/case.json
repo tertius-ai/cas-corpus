@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.del-pezzo-f7-point-count",
+  "title": "Count the F_7-points of a degree-one del Pezzo surface",
+  "domains": ["commalg", "numthy", "geometry"],
+  "source": {
+    "intake_id": "arxiv-0803-3063-f7-del-pezzo-point-count",
+    "kind": "paper",
+    "citation": "Anthony Varilly-Alvarado and David Zywina, Arithmetic E_8 lattices with maximal Galois action, arXiv:0803.3063",
+    "url": "https://arxiv.org/abs/0803.3063",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "039d07bc03a631df066bd16227c40460118408c5ea9244d3f5db1ed88c2801fb"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether supplies exact F_7 arithmetic while the solution follows the paper's displayed affine-fiber count for w^2=z^3+2x^6+2y^6. It reproduces the bounded base-field count 29, not the F_{7^3} count or the ensuing Frobenius classification."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "numthy.FiniteField.__call__", "numthy.FiniteFieldElement.__pow__"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

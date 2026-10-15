@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.graph-minimum-rank-witness",
+  "title": "Certify an exact graph minimum-rank witness",
+  "domains": ["linalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-0812-0870-graph-minimum-rank-witnesses",
+    "kind": "paper",
+    "citation": "Minimum rank of graphs: new results, arXiv:0812.0870",
+    "url": "https://arxiv.org/abs/0812.0870",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "e939524486bf9cda876c3c8e0270f27e0cf833f33bb54234f4d4c057807b1e3f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The ancillary file's witness for graph-atlas entry G721 is transcribed. Exact rational linear algebra certifies rank three, while a Noether graph built from precisely its nonzero off-diagonal pattern certifies the recorded graph data."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.rank", "combin.Graph.from_unweighted", "combin.Graph.degree_sequence"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

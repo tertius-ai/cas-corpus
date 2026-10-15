@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.hermite-criterion-degree-eight",
+  "title": "Expand a degree-eight Hermite-criterion polynomial",
+  "domains": ["commalg", "numthy", "combin"],
+  "source": {
+    "intake_id": "arxiv-1903-10309-hermite-criterion-degree8",
+    "kind": "paper",
+    "citation": "Xiang Fan, Permutation polynomials of degree 8 over finite fields of characteristic 2, arXiv:1903.10309",
+    "url": "https://arxiv.org/abs/1903.10309",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "98eab1f8afb8e66d903afeb1a094707e6580c4d12bd5eb56d5ccd78fa429853d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's HC routine is specialized to its first concrete check. Exponent allocations are enumerated over GF(2), and the exact symbolic result is checked by size, degree and coefficients."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "commalg.PolynomialRing.generator", "commalg.Polynomial.coefficient"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "numthy.prime-short-interval-counts",
+  "title": "Count primes in a family of square-root-length intervals",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-1406-4801-prime-short-interval-plot",
+    "kind": "paper",
+    "citation": "Two statements that are equivalent to a conjecture related to the distribution of prime numbers, arXiv:1406.4801",
+    "url": "https://arxiv.org/abs/1406.4801",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "7ffa195ae7d99e22cdfeb0cf8c4bf09da892142d267b0447c83b09cebc4d5ed2"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The plotting layer is dropped. The case checks the source’s printed prefix of `S`, evaluates its `h(n)` interval count for `n <= 100`, and retains the exact extrema rather than a graphic."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.is_prime"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

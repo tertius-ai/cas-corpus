@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.simplicial-cp2-automorphisms",
+  "title": "Recover the automorphisms of a nine-vertex CP2 triangulation",
+  "domains": ["groups", "topology", "combin"],
+  "source": {
+    "intake_id": "arxiv-2608-14240-complex-projective-plane-automorphisms",
+    "kind": "paper",
+    "citation": "Naman Taggar, SimplicialHomology: implementation of abstract simplicial complex in Mathematica, arXiv:2608.14240; SimplicialHomology commit da518624ff3fb4a89e29b0fc6c5de8f8451cf6ff",
+    "url": "https://arxiv.org/abs/2608.14240",
+    "license": "CC BY 4.0; linked repository MIT licensed",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3327ba881e72b2a17b442f18894f070d4b2247773c936fc5ed586481b1546033"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The finite triangulation and generator data are independently entered. Noether verifies the complex and recovers the same embedded permutation group of order 54."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["topology.SimplicialComplex.verify", "topology.SimplicialComplex.automorphism_group", "groups.Permutation.from_images", "groups.PermutationGroup.from_generators", "groups.PermutationGroup.contains"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

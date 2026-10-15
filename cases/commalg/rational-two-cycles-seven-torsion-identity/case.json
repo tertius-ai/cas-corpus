@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "commalg.rational-two-cycles-seven-torsion-identity",
+  "title": "Verify the rational seven-torsion polynomial identity",
+  "domains": ["commalg", "numthy"],
+  "source": {
+    "intake_id": "github-rational-2-cycles-seven-torsion-identity",
+    "kind": "repository",
+    "citation": "chatchawanpan-dev, rational-2-cycles-cubic-computations commit 29ac6528ef4a443390c8b620911c8088b51983a0, verify_7torsion_basic.m",
+    "url": "https://github.com/chatchawanpan-dev/rational-2-cycles-cubic-computations",
+    "license": "No license file found; mathematical identity cited without source-code redistribution",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b0e113e2c53e9660caae7758d7840bff307ffbbd4ef3428b08a6c64e7b05728c"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The six explicitly displayed integer polynomials and their certificate identity are restated as mathematics; no Magma code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generator",
+      "commalg.Polynomial.factor",
+      "commalg.PolynomialFactorization.verify",
+      "commalg.Polynomial.terms"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

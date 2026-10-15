@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "homalg.determinantal-module-annihilators",
+  "title": "Identify determinantal ideals as module annihilators",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2404-12085-determinantal-module-annihilators",
+    "kind": "paper",
+    "citation": "Janko Boehm, Wolfram Decker, and Frank-Olaf Schreyer, Commutative Algebra and Algebraic Geometry using OSCAR, arXiv:2404.12085",
+    "url": "https://arxiv.org/abs/2404.12085",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "31a07f0458e22b223abe40fc9aed00f72b6817f309c4f3c100fde97061bc142f"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The structured determinants, final cyclic presentations, and colon computation for the source's generated submodule are reproduced. This verifies the reported annihilator ideals without copying the OSCAR module-construction transcript."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.det",
+      "commalg.PolynomialRing.ideal",
+      "homalg.PresentedModule.annihilator",
+      "commalg.Ideal.colon",
+      "commalg.Ideal.normal_form",
+      "commalg.Ideal.certify_primary",
+      "commalg.PolynomialPrimaryCertificate.verify"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

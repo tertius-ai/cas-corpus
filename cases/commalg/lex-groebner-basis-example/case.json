@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "commalg.lex-groebner-basis-example",
+  "title": "A lexicographic Groebner basis over the rationals",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2503-09254-lex-groebner-basis",
+    "kind": "paper",
+    "citation": "Kamillo Ferry and Francesco Nowell, The GroebnerWalk.jl package for OSCAR, arXiv:2503.09254",
+    "url": "https://arxiv.org/abs/2503.09254",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "ac64bed847b0ed1981c27688e418083287c00abbf781cbf51c4ae38d9521eeb0"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's running example is independently recomputed with Noether's supported lexicographic Groebner-basis operation. The case translates the exact input and target basis, not the paper's Groebner-walk algorithm, crossed-cone diagnostics, benchmarks, or implementation. The explanatory prose and program are original; no paper source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Polynomial.__add__",
+      "commalg.Polynomial.__sub__",
+      "commalg.Polynomial.__pow__",
+      "commalg.Ideal.verify",
+      "commalg.Ideal.groebner_basis"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.picard-cremona-transformations",
+  "title": "Compose Cremona transformations on divisor-class data",
+  "domains": ["linalg", "geometry", "numthy"],
+  "source": {
+    "intake_id": "arxiv-2409-19235-picard-lattice-transformations",
+    "kind": "paper",
+    "citation": "Luís Gustavo Mendes and Liliana Puchuri, Negative Curves and Elliptic Fibrations on a Special Rational Surface, arXiv:2409.19235",
+    "url": "https://arxiv.org/abs/2409.19235",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "43a780e374613dfaabde8254a77af33e0e04fba89f4a5c7fa3def075b4db1955"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The three mutable Python functions in the paper are encoded as exact integer matrices on `(degree,m1,m_tau,m_tau2,m_infinity)`. Their published word sends `[6,3,1,1,1]` to `[45,19,12,13,1]`, and each transformation is certified involutive."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.identity", "linalg.Matrix.apply", "linalg.Vector.from_values"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

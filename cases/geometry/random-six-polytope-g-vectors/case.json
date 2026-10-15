@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "geometry.random-six-polytope-g-vectors",
+  "title": "Compute a g-vector for a sampled simplicial six-polytope",
+  "domains": ["geometry", "combin"],
+  "source": {
+    "intake_id": "github-polymake-random-six-polytope-g-vectors",
+    "kind": "repository",
+    "citation": "oscar-system/Polymake.jl commit 4bded3a8d6710132383b72ca7125735961e5d200, g-vectors_of_random_simplicial_6-polytopes.ipynb",
+    "url": "https://github.com/oscar-system/Polymake.jl/blob/4bded3a8d6710132383b72ca7125735961e5d200/examples/g-vectors_of_random_simplicial_6-polytopes.ipynb",
+    "license": "LGPL-2.1-or-later",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "eceb0904c40621a5e3fa8cb9388b83f3c83d35256b6d3aeb6b66659c964adeb5"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The notebook's unseeded floating sample is replaced by seed 20260907 and exact integer points. Noether computes the hull and face data; the standard-library h-to-g conversion is explicit and bounded."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "geometry.Polytope.from_vertices",
+      "geometry.Polytope.verify",
+      "geometry.Polytope.dimension",
+      "geometry.Polytope.vertices",
+      "geometry.Polytope.vertex_facet_incidence",
+      "geometry.Polytope.f_vector"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": 20260907}
+}
+

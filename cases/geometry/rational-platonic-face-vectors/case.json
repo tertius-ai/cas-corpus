@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "geometry.rational-platonic-face-vectors",
+  "title": "Recover the face vectors of three rational Platonic solids",
+  "domains": ["geometry", "combin"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-rational-platonic-face-vectors",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's tetrahedron vertices and standard rational cube and cross-polytope vertices are entered independently. Noether certifies their dimensions, face lattices, and the first three displayed Platonic-solid face vectors. The irrational dodecahedron and icosahedron are outside this rational exact-polytope case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["geometry.Polytope.from_vertices", "geometry.Polytope.verify", "geometry.Polytope.dimension", "geometry.Polytope.facets", "geometry.Polytope.f_vector", "geometry.Polytope.face_lattice"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

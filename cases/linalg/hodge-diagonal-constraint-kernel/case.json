@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "linalg.hodge-diagonal-constraint-kernel",
+  "title": "Kernel of fourfold Hodge-diagonal constraints",
+  "domains": [
+    "linalg"
+  ],
+  "source": {
+    "intake_id": null,
+    "kind": "repository",
+    "citation": "Computer Algebra Session Archive, 2026-08-26, saved/codex/2026-07-29/there/work/hodge_constraints.sage",
+    "url": null,
+    "license": "No license stated",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-27",
+    "sha256": "5d6ab7088ca9026d78856e70ddb4c709074171f090b3bd91c8a29ba1e5a25c05"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The archived Sage calculation motivated this independently written Noether formulation. It retains the exact linear constraints but does not copy archived code or claim a high-level Hodge-theory implementation."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.rank",
+      "linalg.Matrix.kernel",
+      "linalg.SolutionSpace.verify",
+      "linalg.SolutionSpace.dimension",
+      "linalg.Vector.to_values"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

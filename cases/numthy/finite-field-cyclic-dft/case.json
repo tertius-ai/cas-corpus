@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "numthy.finite-field-cyclic-dft",
+  "title": "Compute and invert a length-three DFT over F4",
+  "domains": ["numthy", "linalg"],
+  "source": {"intake_id": "arxiv-2404-05796-finite-field-cyclic-dft", "kind": "paper", "citation": "Jackson Walters, The Modular DFT of the Symmetric Group, arXiv:2404.05796", "url": "https://arxiv.org/abs/2404.05796", "license": "CC BY 4.0", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "4253ef36b0e489f7ab061615678b584fd1ab524caf4ba5af658c67698c3bd0ff"},
+  "translation": {"kind": "adaptation", "notes": "The source's cyclic modular DFT construction is specialized to N=3 over F4. The defining modulus makes the field generator a primitive cube root, and forward/inverse transforms are checked exactly."},
+  "noether": {"version": "0.3.2", "operations": ["numthy.FiniteField.with_modulus", "numthy.FiniteField.generator", "numthy.FiniteField.zero"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

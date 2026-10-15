@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.real-hyperplane-lct",
+  "title": "Compute a real log canonical threshold of a hyperplane arrangement",
+  "domains": ["linalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-2411-13392-real-hyperplane-log-canonical-threshold",
+    "kind": "paper",
+    "citation": "Classification of real hyperplane singularities by real log canonical thresholds, arXiv:2411.13392",
+    "url": "https://arxiv.org/abs/2411.13392",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3e57d9e0c28a251eb31e0b497ddfc4a05b13d78893689dab2d898ca294178cf8"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's four-plane Sage example is translated directly: exact row spaces identify the intersection lattice, codimension-to-weight ratios give lambda, and strict row-space containments give the multiplicity."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.rank", "linalg.Matrix.rref"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

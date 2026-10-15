@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "linalg.generalized-mixed-discriminant",
+  "title": "Recover a generalized mixed discriminant as a determinant coefficient",
+  "domains": ["linalg", "commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1905-07035-generalized-mixed-discriminant",
+    "kind": "paper",
+    "citation": "Justin Chen and Papri Dey, Computing symmetric determinantal representations, arXiv:1905.07035",
+    "url": "https://arxiv.org/abs/1905.07035",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "65bb819930a60e6ae20b0718ab5059aa9b14b8f9e053c8dcc48f2b760afa0e3d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The generic-matrix identity is restated as mathematics. The determinant coefficient is compared with an independently assembled signed permutation-and-color sum."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.from_terms",
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.det",
+      "commalg.Polynomial.terms"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

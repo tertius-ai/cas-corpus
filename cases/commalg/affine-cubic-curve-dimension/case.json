@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "commalg.affine-cubic-curve-dimension",
+  "title": "Certify the dimension of a parametrized affine cubic curve",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "arxiv-2404-12085-affine-curve-dimension",
+    "kind": "paper",
+    "citation": "Janko Boehm, Wolfram Decker, and Frank-Olaf Schreyer, Commutative Algebra and Algebraic Geometry using OSCAR, arXiv:2404.12085",
+    "url": "https://arxiv.org/abs/2404.12085",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "31a07f0458e22b223abe40fc9aed00f72b6817f309c4f3c100fde97061bc142f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The two displayed parametrization relations are entered directly. Noether reproduces the source's radical initial ideal and dimension; no source code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.initial_ideal",
+      "commalg.MonomialIdeal.radical",
+      "commalg.MonomialIdeal.minimal_generators",
+      "commalg.Ideal.dimension",
+      "commalg.MonomialIdeal.dimension",
+      "commalg.MonomialIdeal.verify"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}
+

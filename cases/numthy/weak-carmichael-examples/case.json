@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "numthy.weak-carmichael-examples",
+  "title": "Verify constructions of weak Carmichael numbers",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-1305-1867-weak-carmichael-examples",
+    "kind": "paper",
+    "citation": "Generalizations of Carmichael numbers I, arXiv:1305.1867",
+    "url": "https://arxiv.org/abs/1305.1867",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d3cbaa4034bfbf18fea4f2bcc5130de42a6db8802188abb93a45119455085cab"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The translation factors six examples printed in the paper and applies its criterion: for every distinct prime divisor `p` of odd composite `n`, `p-1` divides `n-1`."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.factor",
+      "numthy.IntegerFactorization.verify",
+      "numthy.is_prime"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

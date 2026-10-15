@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.oscar-five-element-matroid",
+  "title": "Recover circuits of an OSCAR five-element matroid",
+  "domains": ["combin"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-five-element-matroid",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459; heron-rota-welsh.ipynb at micjoswig/oscar-notebooks commit b904e9172ee169eac3b5ef8ad8b08d1d09faa82f",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The eight bases are transcribed from the OSCAR notebook. Noether constructs the matroid and derives its circuits and rank function."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Matroid.from_bases", "combin.Matroid.rank", "combin.Matroid.circuits"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

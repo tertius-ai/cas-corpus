@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "homalg.singularinterface-ideal-syzygies",
+  "title": "Recover an ideal Groebner basis and its two syzygies",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "github-singularinterface-ideal-syzygy-example",
+    "kind": "repository",
+    "citation": "Mohamed Barakat et al., SingularInterface commit 56dd255f8586b5cf55881ce3f56ffeedefea7d62, examples/example.g",
+    "url": "https://github.com/gap-system/SingularInterface/blob/56dd255f8586b5cf55881ce3f56ffeedefea7d62/examples/example.g",
+    "license": "GPL-2.0-or-later",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "93a1c7fa4d9fa915f051e6a9e8da0fa60f8a4ae14baffe34ecbb62e64d73501d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The two ideal generators, displayed Groebner basis, and two displayed syzygy columns are restated as mathematical data; no GAP code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form",
+      "linalg.Matrix.from_rows",
+      "linalg.Vector.from_values",
+      "homalg.ModuleHomomorphism.kernel",
+      "homalg.Submodule.is_equal"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

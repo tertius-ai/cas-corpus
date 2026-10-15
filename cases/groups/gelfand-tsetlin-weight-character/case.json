@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.gelfand-tsetlin-weight-character",
+  "title": "Recover a GL(3) weight character from Gelfand--Tsetlin data",
+  "domains": ["groups", "combin", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-gelfand-tsetlin-weight-character",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "For partition (3,1,1), the source enumerates six lattice points of the GL(3) Gelfand--Tsetlin polytope. Noether independently enumerates the six semistandard tableaux, recovers the same six weight multiplicities, and checks the Weyl dimension. This translates the representation encoded by the polytope, not its unsupported Ehrhart-polynomial operation."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Tableau.semistandard", "combin.Tableau.content", "groups.PolynomialGlRepresentation.weyl_dimension", "groups.PolynomialGlRepresentation.gl_character", "groups.WeightCharacter.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

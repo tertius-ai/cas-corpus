@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "combin.uniform-matroid-direct-sum-tutte",
+  "title": "Compute the Tutte polynomial of two copies of U(1,2)",
+  "domains": ["combin"],
+  "source": {"intake_id": "arxiv-1612-02581-uniform-matroid-direct-sum-tutte", "kind": "paper", "citation": "Simon Hampe and Michael Joswig, Tropical Computations in polymake, arXiv:1612.02581", "url": "https://arxiv.org/abs/1612.02581", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "79780c0c357a24b62b63db60455e93853c2fd6df22fb11db2e60fd6fc904c182"},
+  "translation": {"kind": "translation", "notes": "The direct sum is reconstructed from its four bases and its Tutte polynomial is compared term by term."},
+  "noether": {"version": "0.3.2", "operations": ["combin.Matroid.from_bases", "combin.Matroid.rank", "combin.Matroid.circuits", "combin.Matroid.tutte_polynomial", "commalg.Polynomial.terms"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

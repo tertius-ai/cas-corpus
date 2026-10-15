@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "combin.polymake-square-graph-automorphisms",
+  "title": "Compute automorphisms, stabilizers, and orbits of a square graph",
+  "domains": ["combin", "groups"],
+  "source": {
+    "intake_id": "github-polymake-square-graph-automorphisms",
+    "kind": "repository",
+    "citation": "polymake commit cd20bd56aade8019ff21f161461ee3f1dda95512, demo/aut_of_graphs.ipynb",
+    "url": "https://github.com/polymake/polymake/blob/cd20bd56aade8019ff21f161461ee3f1dda95512/demo/aut_of_graphs.ipynb",
+    "license": "GPL-2.0-or-later",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b9b825dc083e28c5defacec93333bd0af6892acc04add7ddc0583427d36345bf"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The notebook's four-vertex graph and stated group invariants are restated directly; no implementation code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Graph.automorphism_group",
+      "groups.PermutationGroup.order",
+      "groups.PermutationGroup.orbit",
+      "groups.PermutationGroup.stabilizer",
+      "groups.PermutationGroup.set_stabilizer"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

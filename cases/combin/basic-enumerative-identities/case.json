@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.basic-enumerative-identities",
+  "title": "Verify factorial, Touchard, and Narayana polynomial identities",
+  "domains": ["combin", "commalg", "numthy"],
+  "source": {
+    "intake_id": "arxiv-2602-12372-basic-enumerative-combinatorics",
+    "kind": "paper",
+    "citation": "Enumerative combinatorics package for CoCoA, arXiv:2602.12372",
+    "url": "https://arxiv.org/abs/2602.12372",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "e728b74f136146cdf4f0418ee050499996fb67a6f2e32ca54d3ac3ab471e796f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "A coherent exact subset of the CoCoA examples is rebuilt from definitions: rising and falling factorials, Touchard polynomials via Stirling numbers, and Narayana polynomials via binomial coefficients. The printed coefficients and specializations are checked."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generator", "commalg.Polynomial.evaluate"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

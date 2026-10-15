@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "combin.johnson-strongly-regular-graph",
+  "title": "Construct and certify the Johnson graph J(5,2)",
+  "domains": ["combin", "groups"],
+  "source": {"intake_id": "arxiv-1601-00181-johnson-strongly-regular-graph", "kind": "paper", "citation": "Implementing Brouwer's database of strongly regular graphs, arXiv:1601.00181", "url": "https://arxiv.org/abs/1601.00181", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "289b290a2eb4ba800c8c55054124c88995f7ff0e45d77cfcec1b8c2079c7e1d5"},
+  "translation": {"kind": "adaptation", "notes": "J(5,2) is constructed directly from two-subsets, avoiding database plumbing. Degree and common-neighbor counts certify its strongly regular parameters."},
+  "noether": {"version": "0.3.2", "operations": ["combin.Graph.degree", "combin.Graph.neighbors", "combin.Graph.automorphism_group", "groups.PermutationGroup.order"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

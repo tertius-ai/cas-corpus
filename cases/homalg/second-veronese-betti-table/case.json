@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.second-veronese-betti-table",
+  "title": "Compute the second Veronese surface's graded Betti table",
+  "domains": ["homalg", "commalg", "linalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1606-08181-second-veronese-betti-table",
+    "kind": "paper",
+    "citation": "Wouter Castryck, Filip Cools, Jeroen Demeyer, and Alexander Lemmens, Computing graded Betti tables of toric surfaces, arXiv:1606.08181",
+    "url": "https://arxiv.org/abs/1606.08181",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "9cde792e6440a43a6b20016b049a636fc5bb42b81a9210f1235bb07e370afc28"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The classical six-quadratic determinantal presentation of the second Veronese surface is entered explicitly. Noether certifies the minimal resolution and reproduces the appendix's Betti table. The source's main sixth-Veronese computation remains a scale-blocked case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "numthy.finite-field-isomorphism-f25",
+  "title": "A checked isomorphism between two presentations of F_25",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-1705-01221-finite-field-isomorphism",
+    "kind": "paper",
+    "citation": "Ludovic Brieulle, Luca De Feo, Javad Doliskani, Jean-Pierre Flori, and Eric Schost, Computing isomorphisms and embeddings of finite fields, arXiv:1705.01221",
+    "url": "https://arxiv.org/abs/1705.01221",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-25",
+    "sha256": "ac72c7752ce4a17468a7be15a148f5e8f7b50dfebc56b844df9e9c703fa6d713"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The paper's characteristic-7 degree-237 benchmark is reduced to a hand-checkable degree-2 case with the same presentation-isomorphism contract. The case distinguishes Noether's deterministic choice from mathematical uniqueness by exhibiting its Frobenius-conjugate alternative. The program and prose are original and no source code is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.FiniteField.with_modulus",
+      "numthy.FiniteField.isomorphism_to",
+      "numthy.FiniteFieldIsomorphism.apply_inverse",
+      "numthy.FiniteFieldIsomorphism.verify",
+      "numthy.FiniteFieldElement.frobenius"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

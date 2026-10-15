@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "homalg.transverse-cone-cohomology",
+  "title": "Cohomology of a reduced transverse-cone complex",
+  "domains": [
+    "homalg",
+    "linalg"
+  ],
+  "source": {
+    "intake_id": null,
+    "kind": "repository",
+    "citation": "Computer Algebra Session Archive, 2026-08-26, saved/codex/2026-07-29/there/work/check_transverse_cone.py",
+    "url": null,
+    "license": "No license stated",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-27",
+    "sha256": "5d6ab7088ca9026d78856e70ddb4c709074171f090b3bd91c8a29ba1e5a25c05"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "This independent adaptation starts from the dimensions and differential ranks of the archived exterior-algebra calculation and realizes its additive cochain complex in reduced bases. It verifies the resulting cohomology but does not claim that Noether 0.1 constructs the exterior algebra, cone, or DG endomorphism object."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "linalg.Matrix.from_rows",
+      "homalg.ChainComplex.from_coboundaries",
+      "homalg.ChainComplex.verify",
+      "homalg.ChainComplex.graded_cohomology",
+      "homalg.GradedHomology.verify",
+      "homalg.HomologyGroup.verify",
+      "homalg.HomologyGroup.dimension"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

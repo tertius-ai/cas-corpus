@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.two-point-secant-elimination",
+  "title": "Recover the secant line of two points by elimination",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-0910-0989-two-point-secant-elimination",
+    "kind": "paper",
+    "citation": "Jessica Sidman and Peter Vermeire, Equations defining secant varieties: geometry and computation, arXiv:0910.0989",
+    "url": "https://arxiv.org/abs/0910.0989",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "8f73599f159e94794e4beb5d98f60d0b2a83f34b6a29d6e1624bc0065a992090"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "This translates the paper's explicit two-point illustration of the Sturmfels-Sullivant secant construction. Noether certifies the elimination result. The paper's genus-two secant ideal and Betti table require a secant-variety constructor and are not claimed here."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generators", "commalg.PolynomialRing.ideal", "commalg.Ideal.eliminate_with_evidence", "commalg.IdealElimination.verify", "commalg.IdealElimination.result", "commalg.Ideal.groebner_basis"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

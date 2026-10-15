@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "commalg.coordinate-ideal-primary-decomposition",
+  "title": "Decompose a coordinate ideal into plane and axis components",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1706-07797-primary-decomposition",
+    "kind": "paper",
+    "citation": "David Kahle, Christopher O'Neill, and Jeff Sommars, A computer algebra system for R: Macaulay2 and the m2r package, arXiv:1706.07797",
+    "url": "https://arxiv.org/abs/1706.07797",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "6899e42ae5af3f6bef29e76c5e5890693c5fa99ec1b0fa5ec512f838f46a8667"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's ideal and two components are restated as exact rational polynomial ideals. Noether computes and verifies the decomposition."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.primary_decomposition",
+      "commalg.PrimaryDecomposition.verify",
+      "commalg.Ideal.normal_form",
+      "commalg.Ideal.dimension"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

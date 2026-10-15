@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.zonal-polynomial-recurrence",
+  "title": "Compute zonal polynomials from the partition recurrence",
+  "domains": ["combin", "commalg", "numthy"],
+  "source": {
+    "intake_id": "arxiv-2001-11599-zonal-polynomial-recurrence",
+    "kind": "paper",
+    "citation": "Lin Jiu and Christoph Koutschan, Calculation and Properties of Zonal Polynomials, arXiv:2001.11599",
+    "url": "https://arxiv.org/abs/2001.11599",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "ee6250b56c588034a750de2d777d90e9409b140d0ee5d27ff7336b21d11734f4"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Dominated integer partitions and the source recurrence are implemented directly with exact rationals. They reproduce both the displayed C_(2,1)(a,b,c) and the larger coefficient c_((5,4),(3,3,3))."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generator", "commalg.Polynomial.coefficient", "commalg.Polynomial.nonzero_term_count"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.line-arrangement-jacobian-syzygies",
+  "title": "Compute Jacobian syzygies of a singular line arrangement",
+  "domains": ["homalg", "commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1407-0168-line-arrangement-jacobian-syzygies",
+    "kind": "paper",
+    "citation": "Alexandru Dimca and Gabriel Sticlaru, Syzygies of Jacobian ideals and weighted homogeneous singularities, arXiv:1407.0168",
+    "url": "https://arxiv.org/abs/1407.0168",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "261174d6aaf0e1db3c0f32699540feeeb4464c65b331924e90691a15d868a82d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The Singular computation is translated to a graded polynomial-module map. Its exact kernel has minimal coordinate degrees two and three, giving the reported four-dimensional degree-three component."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.Polynomial.derivative", "homalg.ModuleHomomorphism.kernel", "homalg.Submodule.minimal_homogeneous_generators"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

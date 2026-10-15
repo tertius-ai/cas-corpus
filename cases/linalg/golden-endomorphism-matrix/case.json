@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.golden-endomorphism-matrix",
+  "title": "Certify a golden-ratio endomorphism matrix",
+  "domains": ["linalg", "numthy", "commalg"],
+  "source": {
+    "intake_id": "github-endomorphisms-golden-matrix",
+    "kind": "repository",
+    "citation": "Edgar Costa, Nicolas Mascot, Jeroen Sijsling, and John Voight, Rigorous computation of the endomorphism ring of a Jacobian, Math. Comp. 88 (2019), arXiv:1705.09248; examples/Ex8.1.1.m at edgarcosta/endomorphisms commit 691d1c1ceaa7f6dd139a83fffa1c98d1d8c4a50a",
+    "url": "https://github.com/edgarcosta/endomorphisms",
+    "license": "GPL-2.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3d80f5cbd48e74106e420998737f0a83f0f90de5a580ffb568a78003750fb2f1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The final diagonal 2-by-2 matrix in the Magma example is transcribed exactly. Noether verifies its determinant and rational characteristic polynomial."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.det", "linalg.Matrix.charpoly"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

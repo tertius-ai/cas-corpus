@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "commalg.groebner-membership-witnesses",
+  "title": "Produce checkable witnesses for ideal membership and equality",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "github-groebnertactic-ideal-witnesses",
+    "kind": "repository",
+    "citation": "WuProver/GroebnerTactic commit 1cbbc7122e52e757ba6502f450a3cfd1df243b26, GroebnerTac/Example.lean",
+    "url": "https://github.com/WuProver/GroebnerTactic/blob/1cbbc7122e52e757ba6502f450a3cfd1df243b26/GroebnerTac/Example.lean",
+    "license": "No license file found; mathematical examples cited without source-code redistribution",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "0fe48814e736152f937eff560f58fceed87f4c5aae5800e7c6a01da8e61174f1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Two small Lean examples are restated as polynomial ideals. Noether's verified reduction records supply explicit multipliers and remainders."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.reduce",
+      "commalg.IdealReduction.multipliers",
+      "commalg.IdealReduction.remainder",
+      "commalg.IdealReduction.is_member",
+      "commalg.IdealReduction.verify"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

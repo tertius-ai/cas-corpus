@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "commalg.three-quadric-groebner-normal-form",
+  "title": "Compute a lexicographic Groebner basis and normal form for three quadrics",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "arxiv-2404-12085-three-quadric-groebner-normal-form",
+    "kind": "paper",
+    "citation": "Janko Boehm, Wolfram Decker, and Frank-Olaf Schreyer, Commutative Algebra and Algebraic Geometry using OSCAR, arXiv:2404.12085",
+    "url": "https://arxiv.org/abs/2404.12085",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "31a07f0458e22b223abe40fc9aed00f72b6817f309c4f3c100fde97061bc142f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's three generators and displayed reduced lexicographic basis are transcribed as mathematics. Noether recomputes the basis and a companion normal form; no OSCAR code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}
+

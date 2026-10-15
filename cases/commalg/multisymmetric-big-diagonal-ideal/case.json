@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.multisymmetric-big-diagonal-ideal",
+  "title": "Identify a big diagonal ideal by alternating determinants",
+  "domains": ["commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2510-01895-multisymmetric-big-diagonal-ideal",
+    "kind": "paper",
+    "citation": "Daniele Agostini and Jinhyung Park, Determinantal ideals of secant varieties, arXiv:2510.01895",
+    "url": "https://arxiv.org/abs/2510.01895",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "008a9e86a381183b3b0c9534aa73ff3ab1683d48388eda40682a598c1b2fbe81"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The independent Oscar/Macaulay2 calculation is restated from its exponent data. Mutual Groebner reduction proves that the 22 alternating determinants generate the intersection of the three pairwise column-diagonal ideals."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.det", "commalg.Ideal.intersection", "commalg.Ideal.normal_form"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

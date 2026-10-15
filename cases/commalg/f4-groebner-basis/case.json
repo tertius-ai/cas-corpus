@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "commalg.f4-groebner-basis",
+  "title": "Certify a published reduced Groebner basis over F101",
+  "domains": ["commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2509-03346-f4-groebner-basis",
+    "kind": "paper",
+    "citation": "Anna Maria Bigatti et al., Solving Polynomial Systems with Groebner Bases: An Introduction to F4 and FGLM, arXiv:2509.03346",
+    "url": "https://arxiv.org/abs/2509.03346",
+    "license": "CC BY-NC-SA 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "27b9c3fddab50735f642ac20d5ed81337a10023ccc54daff5fea049e28b86c59"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The input ideal and published reduced basis are restated as mathematics. The case tests the basis, not a public promise to select F4 internally."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.FiniteField.prime",
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

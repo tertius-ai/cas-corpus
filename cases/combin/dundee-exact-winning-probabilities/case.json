@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "combin.dundee-exact-winning-probabilities",
+  "title": "Compute exact winning probabilities for Dundee bids",
+  "domains": ["combin", "numthy"],
+  "source": {
+    "intake_id": "arxiv-0803-0156-dundee-exact-probabilities",
+    "kind": "paper",
+    "citation": "How to Play Dundee, arXiv:0803.0156",
+    "url": "https://arxiv.org/abs/0803.0156",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "66d875f4e1131d5b074cabef0abc5658a5a27bf308cf521458f3b87393b24ef1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's memoized Mathematica recurrence for advance bids is translated literally with immutable states. Noether's rational context keeps every transition probability exact, and selected optimal bids from the published table reproduce equal probabilities."
+  },
+  "noether": {"version": "0.3.2", "operations": ["RationalField.__call__"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

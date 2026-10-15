@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "commalg.binary-independence-ideal",
+  "title": "Reduce a binary independence model to its determinant equation",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "arxiv-1706-07797-independence-ideal",
+    "kind": "paper",
+    "citation": "David Kahle, Christopher O'Neill, and Jeff Sommars, A computer algebra system for R: Macaulay2 and the m2r package, arXiv:1706.07797",
+    "url": "https://arxiv.org/abs/1706.07797",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "6899e42ae5af3f6bef29e76c5e5890693c5fa99ec1b0fa5ec512f838f46a8667"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The four factorization constraints and normalization equation are restated directly. Noether compares their ideal with the determinant-and-normalization presentation."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form",
+      "commalg.Ideal.dimension"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

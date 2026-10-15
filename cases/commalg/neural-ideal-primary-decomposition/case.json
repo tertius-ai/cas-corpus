@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "commalg.neural-ideal-primary-decomposition",
+  "title": "Primary-decompose a three-neuron neural ideal",
+  "domains": ["commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1609-09602-neural-ideal-primary-decomposition",
+    "kind": "paper",
+    "citation": "Ethan Petersen et al., Neural Ideals in SageMath, arXiv:1609.09602",
+    "url": "https://arxiv.org/abs/1609.09602",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-25",
+    "sha256": "dfd4fc9f2eb4fee501b6a19752fe50e8e69b78c8638363cdd9c50bf07e8f06c6"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The five indicator pseudomonomials for C={001,010,110} are reconstructed from the definition. Noether certifies the two components reported by the paper and both containment directions."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.FiniteField.prime",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.admit_primary_decomposition",
+      "commalg.PrimaryDecomposition.verify",
+      "commalg.Ideal.certify_primary",
+      "commalg.PolynomialPrimaryCertificate.verify",
+      "commalg.Ideal.intersection",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}
+

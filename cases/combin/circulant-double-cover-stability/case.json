@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.circulant-double-cover-stability",
+  "title": "Verify stability of small circulant graph double covers",
+  "domains": ["combin", "groups"],
+  "source": {
+    "intake_id": "arxiv-2108-05164-circulant-double-cover-stability",
+    "kind": "paper",
+    "citation": "On the stability of circulant graphs, arXiv:2108.05164",
+    "url": "https://arxiv.org/abs/2108.05164",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3f0cb87c13e28267bb1c7e31fb28c679eea086ca38725031414748496f22b5fc"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Two of the ancillary Sage program's small circulants are constructed from their connection sets, along with their categorical double covers. Exact graph automorphism groups verify the source's stability test."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Graph.from_unweighted", "combin.Graph.automorphism_group", "groups.PermutationGroup.order"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 45, "seed": null}
+}

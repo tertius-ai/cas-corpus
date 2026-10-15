@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.isogonal-conjugate-distance-identity",
+  "title": "Verify an isogonal-conjugate distance identity",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2105-01621-isogonal-conjugate-identity",
+    "kind": "paper",
+    "citation": "Shalosh B. Ekhad and Doron Zeilberger, A One-Line Proof of Leversha's Quartet of Isogonal Conjugates Theorem, arXiv:2105.01621",
+    "url": "https://arxiv.org/abs/2105.01621",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c608c4715af0016736469dcbc9d969073bf8030244d4109379e736a9bb460c22"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's displayed rational coordinates share a denominator, so the distance comparison is translated after clearing it. The exact polynomial identity proves the two conjugates are mirror images and have the stated common radius."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generator", "commalg.Polynomial.is_zero"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.codepth-three-h43-resolution",
+  "title": "Resolve a codepth-three quotient of class H(4,3)",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2303-13687-codepth-h43-resolution",
+    "kind": "paper",
+    "citation": "Lars Winther Christensen, Orin Gotchey, and Alexis Hardesty, Sampling Algebra Structures on Minimal Free Resolutions, arXiv:2303.13687",
+    "url": "https://arxiv.org/abs/2303.13687",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "f8614d424847fa34bda5ef51041441f6fd82dec8a57a255aee61d9f6574a05c0"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether reproduces the ordinary minimal graded resolution of the paper's class H(4,3) example and verifies Betti totals (1,5,7,3). Classifying the multiplicative Tor-algebra structure remains outside the case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

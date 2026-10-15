@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "numthy.generalized-stirling-recurrence",
+  "title": "Verify Mathar's recurrence for generalized-Stirling sequence A001711",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-2605-11351-generalized-stirling-recurrence",
+    "kind": "paper",
+    "citation": "Tong Niu, A short proof of Mathar's 2020 recurrence conjecture for the generalized-Stirling sequence A001711, arXiv:2605.11351",
+    "url": "https://arxiv.org/abs/2605.11351",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "ef9b96c3d3a8b7bd14350e096277f2f188cb95203a84784a2a5f9d1e7d77a4ae"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether rationals evaluate the factorial–harmonic closed form exactly, reproduce the published OEIS prefix, and verify the conjectured recurrence on 499 indices."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "RationalField.__call__"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

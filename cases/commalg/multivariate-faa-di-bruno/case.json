@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.multivariate-faa-di-bruno",
+  "title": "Expand a bounded multivariate Faà di Bruno formula",
+  "domains": ["commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1012-6008-multivariate-faa-di-bruno",
+    "kind": "paper",
+    "citation": "E. Di Nardo, G. Guarino, and D. Senato, A new algorithm for computing the multivariate Faà di Bruno's formula, arXiv:1012.6008",
+    "url": "https://arxiv.org/abs/1012.6008",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "479ff648b73dfb04e272d1afe35ccc723d45c7284c90de77877a160c42e23790"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The Maple partition-table algorithm is specialized to multi-index (1,1), whose two partition shapes are expanded explicitly. The result is certified against direct exact differentiation of the composition."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.Polynomial.derivative", "commalg.Polynomial.substitute", "commalg.Polynomial.terms"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

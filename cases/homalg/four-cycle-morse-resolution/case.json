@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.four-cycle-morse-resolution",
+  "title": "Resolve the edge ideal of a four-cycle",
+  "domains": ["homalg", "commalg", "combin", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2307-03633-four-cycle-resolution",
+    "kind": "paper",
+    "citation": "Trung Chau, Selvi Kara, and Augustine O'Keefe, The MorseResolutions package for Macaulay2, arXiv:2307.03633",
+    "url": "https://arxiv.org/abs/2307.03633",
+    "license": "Creative Commons Attribution 4.0 International",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d1ca85209b8d7577782961bd3e6b8b3edc20bd3294c1a4b7bb1a5431a86361fa"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether independently computes and verifies the minimal resolution of the four-cycle edge ideal used in the paper's Morse-resolution example. It does not reproduce the discrete-Morse construction or its matching."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

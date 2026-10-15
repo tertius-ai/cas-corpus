@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "groups.degree-four-permutation-actions",
+  "title": "Five transitive permutation groups of degree four",
+  "domains": [
+    "groups"
+  ],
+  "source": {
+    "intake_id": null,
+    "kind": "repository",
+    "citation": "Computer Algebra Session Archive, 2026-08-26, saved/codex/2026-08-04/orl/work/search_degree4_permutation_quotient_filters.sage",
+    "url": null,
+    "license": "No license stated",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-27",
+    "sha256": "5d6ab7088ca9026d78856e70ddb4c709074171f090b3bd91c8a29ba1e5a25c05"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The archived search motivated this bounded classification check. The generators and invariant assertions are independently expressed through Noether's public permutation-group surface; no archived code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "groups.Permutation.from_images",
+      "groups.PermutationGroup.from_generators",
+      "groups.PermutationGroup.order",
+      "groups.PermutationGroup.orbit",
+      "groups.PermutationGroup.stabilizer",
+      "groups.PermutationGroup.conjugacy_classes",
+      "groups.ConjugacyClass.verify",
+      "groups.ConjugacyClass.centralizer"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.tipsy-cop-markov-chain",
+  "title": "Compute exact tipsy cop-and-robber survival probabilities",
+  "domains": ["linalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-2102-13532-tipsy-cop-markov-chain",
+    "kind": "paper",
+    "citation": "Markov models for the tipsy cop and robber game on graphs, arXiv:2102.13532",
+    "url": "https://arxiv.org/abs/2102.13532",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "8303c735a44169aba66303a4eae80499bff2a97976c76dfbba142c0172f95193"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's path-distance model is replayed with its n=10, M=7, r=0.30 and t=0.40 parameters, represented as exact rationals. Matrix powers give survival and solving (I-T)e=1 gives expected duration."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.matmul", "linalg.Matrix.solve", "linalg.Matrix.apply"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

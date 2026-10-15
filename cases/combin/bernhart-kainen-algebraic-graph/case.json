@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "combin.bernhart-kainen-algebraic-graph",
+  "title": "Algebraic construction of the 16-vertex Bernhart--Kainen graph",
+  "domains": [
+    "combin",
+    "groups"
+  ],
+  "source": {
+    "intake_id": "arxiv-2608-08118-bernhart-kainen-algebraic-graph",
+    "kind": "paper",
+    "citation": "David Seka and Stefan Szeider, Neurosymbolic Discovery of Algebraic Graph Constructions, arXiv:2608.08118",
+    "url": "https://arxiv.org/abs/2608.08118",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b9e7d19bc307b2491fed1715953d30a03814ff988559d0336ccfb011ee3b4503"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's parity-coupled ten-cycle and two-independent-triples construction is expressed independently with Noether graph objects. The case verifies exact graph and automorphism invariants but does not reproduce the paper's separate nondispersability search. No paper or repository code is copied."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "combin.Graph.order",
+      "combin.Graph.edge_count",
+      "combin.Graph.degree_sequence",
+      "combin.Graph.connected_components",
+      "combin.ConnectedComponents.count",
+      "combin.Graph.canonical_label",
+      "combin.CanonicalLabel.verify",
+      "combin.Graph.automorphism_group",
+      "groups.PermutationGroup.order",
+      "groups.PermutationGroup.orbit"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

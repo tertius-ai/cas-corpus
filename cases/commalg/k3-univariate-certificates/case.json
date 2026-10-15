@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.k3-univariate-certificates",
+  "title": "Verify three exact certificates from a degree-two K3 computation",
+  "domains": ["commalg", "numthy", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1906-02261-k3-univariate-certificates",
+    "kind": "paper",
+    "citation": "Nicolas Addington, Benjamin Antieau, Sarah Frei, and Katrina Honigs, Rational points and derived equivalence, arXiv:1906.02261",
+    "url": "https://arxiv.org/abs/1906.02261",
+    "license": "arXiv non-exclusive license to distribute 1.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-09-03",
+    "sha256": "37f4067e28b334c2b5c47281f582a07f1e687d91c2405fc2dd63e2ca2779a059"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Three exact univariate checks are independently entered from the paper's accompanying Magma calculations: factor the Tate-normalized Weil polynomial, recover square roots of two restricted sextics, and isolate the unique real root of a critical-value eliminant. The larger K3 point-count and bad-prime searches remain scale-blocked."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.cyclotomic_polynomial", "commalg.Polynomial.base_change", "commalg.Polynomial.factor", "commalg.PolynomialFactorization.verify", "numthy.FiniteField.prime", "commalg.Polynomial.is_nth_power", "commalg.Polynomial.nth_root", "commalg.Polynomial.real_roots", "commalg.RealRootIsolation.verify", "commalg.RealRootIsolation.refine", "commalg.RealRootIsolation.ball"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

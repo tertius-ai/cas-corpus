@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.cellular-monomial-resolution",
+  "title": "Resolve a monomial ideal from a cellular-resolution example",
+  "domains": ["homalg", "commalg", "combin", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2307-08224-cellular-monomial-resolution",
+    "kind": "paper",
+    "citation": "Aleksandra Sobieska and Jay Yang, CellularResolutions M2 Package, arXiv:2307.08224",
+    "url": "https://arxiv.org/abs/2307.08224",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "ef190f45e15b2ac162b77b70c316a17215779b935f7fe3df33952b08bc805891"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether computes and verifies the ordinary minimal graded resolution of the paper's monomial ideal. Constructing and labeling the supporting cell complex remains outside this scoped case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "topology.real-projective-plane-integral-homology",
+  "title": "Integral homology of a triangulated real projective plane",
+  "domains": [
+    "topology",
+    "homalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2504-10381-real-projective-plane-homology",
+    "kind": "paper",
+    "citation": "Nathan Grieve, Abstract simplicial complexes in Macaulay2, arXiv:2504.10381",
+    "url": "https://arxiv.org/abs/2504.10381",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-25",
+    "sha256": "9caee18d14f8d8e8cf108be930e323a71772b5f50346f9650d506b6ae3049e44"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The ten-facet triangulation and its integral homology calculation are translated directly to Noether. The explanatory prose and program are original; no paper source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "topology.SimplicialComplex.verify",
+      "topology.SimplicialComplex.chain_complex",
+      "homalg.ChainComplex.verify",
+      "topology.SimplicialComplex.homology_invariants",
+      "homalg.FinitelyGeneratedAbelianGroup.verify"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 15,
+    "seed": null
+  }
+}

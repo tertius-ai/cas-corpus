@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.sparse-surface-implicitization",
+  "title": "Implicitize a sparse rational surface parametrization",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1001-1126-sparse-parametrization-implicitization",
+    "kind": "paper",
+    "citation": "Nicolas Botbol and Marc Dohm, A package for computing implicit equations of parametrizations from toric surfaces, arXiv:1001.1126",
+    "url": "https://arxiv.org/abs/1001.1126",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "1d6e936fa4e698d45fb0c21d90ff48c04a2d10a748f147a68f8f4b530edec0c2"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "Rather than reconstructing the paper's toric approximation-complex matrix, this case homogenizes the graph with a scale variable and eliminates the three parameters. The unique degree-six result matches all 41 printed coefficients after correcting two visibly nonhomogeneous exponents in the displayed formula."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generators", "commalg.PolynomialRing.ideal", "commalg.Ideal.eliminate_with_evidence", "commalg.IdealElimination.verify", "commalg.IdealElimination.result", "commalg.Ideal.groebner_basis", "commalg.Polynomial.homogeneous_degree"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

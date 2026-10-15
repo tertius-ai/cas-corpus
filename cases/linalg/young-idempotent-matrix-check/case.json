@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "linalg.young-idempotent-matrix-check",
+  "title": "Verify a self-adjoint Young-symmetrizer idempotent",
+  "domains": [
+    "linalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-0910-0447-young-idempotent-matrix-check",
+    "kind": "paper",
+    "citation": "Bernd Fiedler, Self-adjoint symmetry operators connected with the magnetic Heisenberg ring, arXiv:0910.0447",
+    "url": "https://arxiv.org/abs/0910.0447",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "198799a21901b023561916bc8f05d4be81216b49bd38204f8219140190c06895"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether receives the three printed rational 4-by-4 matrices directly and verifies all five displayed product identities exactly. The earlier permutation-algebra construction is intentionally outside this certificate."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.__matmul__",
+      "linalg.Matrix.to_rows"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

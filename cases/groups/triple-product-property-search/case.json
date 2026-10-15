@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.triple-product-property-search",
+  "title": "Search S3 for triple-product-property subsets",
+  "domains": ["groups", "combin"],
+  "source": {
+    "intake_id": "arxiv-1104-5097-triple-product-property-search",
+    "kind": "paper",
+    "citation": "Ivo Hedtke and Sandeep Murthy, Search and test algorithms for Triple Product Property triples, arXiv:1104.5097",
+    "url": "https://arxiv.org/abs/1104.5097",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "e1ccaa9296126a318a6c52293f2e5790d2f215497713a28dcbd5d2e7a38129f6"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The GAP search is specialized to ordered size-(2,2,2) triples in S3. It retains the identity-containing enumeration and pairwise-intersection pruning, then tests quotient-set products exactly."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["groups.PermutationGroup.from_generators", "groups.PermutationGroup.iterate_elements", "groups.PermutationGroup.multiply", "groups.PermutationGroup.inverse"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

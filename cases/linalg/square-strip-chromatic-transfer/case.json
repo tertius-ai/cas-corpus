@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.square-strip-chromatic-transfer",
+  "title": "Compute a square-strip chromatic polynomial by transfer matrix",
+  "domains": ["linalg", "commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-cond-mat-0004330-square-strip-chromatic-transfer",
+    "kind": "paper",
+    "citation": "Jesús Salas and Alan D. Sokal, Transfer Matrices and Partition-Function Zeros for Antiferromagnetic Potts Models I: General Theory and Square-Lattice Chromatic Polynomial, arXiv:cond-mat/0004330",
+    "url": "https://arxiv.org/abs/cond-mat/0004330",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "371083e78fbf4659695bfaf27705ec29955ac2b89e264b5af5c736b6a6d0985d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The published width-three free-boundary transfer matrix and vectors are encoded over Z[q]. Computing V T^2 U gives the exact 3-by-3 square-grid chromatic polynomial and its values at two, three and four colors."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.matmul", "commalg.Polynomial.evaluate"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

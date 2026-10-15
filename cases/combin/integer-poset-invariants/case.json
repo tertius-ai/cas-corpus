@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.integer-poset-invariants",
+  "title": "Compute structural invariants of a six-element integer poset",
+  "domains": ["combin", "groups"],
+  "source": {
+    "intake_id": "arxiv-2310-12687-integer-poset-invariants",
+    "kind": "paper",
+    "citation": "Viviane Pons, Combinatorics of the Permutahedra, Associahedra, and Friends, arXiv:2310.12687; IntegerPosets/Demo.ipynb at VivianePons/public-notebooks commit 3fb78f7722c24a3d01b962681cd57d7cdb707af5",
+    "url": "https://arxiv.org/abs/2310.12687",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "76dde7ba30953bc25817e216ebcfdf918abbcc94f6c921ed27fc8941c90f4993"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The thirteen strict relations are transcribed from the Sage notebook. Noether independently computes elementary poset and symmetry invariants."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Poset.height", "combin.Poset.width", "combin.Poset.minimal_elements", "combin.Poset.maximal_elements", "combin.Poset.comparable_pair_count", "combin.Poset.is_lattice", "combin.Poset.is_self_dual", "combin.Poset.automorphism_group"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

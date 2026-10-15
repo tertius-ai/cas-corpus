@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "combin.sylvester-denumerant-quasipolynomial",
+  "title": "Interpolate the quasipolynomial for 6x+2y+3z=t",
+  "domains": ["combin", "linalg", "commalg"],
+  "source": {"intake_id": "arxiv-1312-7147-sylvester-denumerant-quasipolynomial", "kind": "paper", "citation": "Coefficients of Sylvester's Denumerant, arXiv:1312.7147", "url": "https://arxiv.org/abs/1312.7147", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "d10e9089d01f4149a2fbdaad57546672ede74ec8fec2303dd837119ab4eb4d7b"},
+  "translation": {"kind": "adaptation", "notes": "Counts are enumerated directly and each of the six quadratic residue-class pieces is recovered by an exact rational Vandermonde solve, then checked beyond the interpolation points."},
+  "noether": {"version": "0.3.2", "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.solve", "linalg.SolutionSpace.verify", "linalg.Vector.from_values", "linalg.Vector.to_values"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

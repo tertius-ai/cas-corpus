@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "numthy.cubic-field-embeddings",
+  "title": "Compute certified embeddings of a cubic number field",
+  "domains": ["numthy"],
+  "source": {
+    "intake_id": "arxiv-2404-06858-cubic-field-embeddings",
+    "kind": "paper",
+    "citation": "Claus Fieker and Tommy Hofmann, Number Theory in OSCAR, arXiv:2404.06858",
+    "url": "https://arxiv.org/abs/2404.06858",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c4437fd384e1552e973264b6d3cac2fb80488da34bcf36c03af13ab2cfeb8877"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's field Q(a), a^3=2, and evaluation of a-1 are reconstructed directly. Noether certifies the signature and complex balls at 128-bit precision."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.NumberField.degree",
+      "numthy.NumberField.signature",
+      "numthy.NumberFieldElement.trace",
+      "numthy.NumberFieldElement.norm",
+      "numthy.NumberFieldElement.conjugates",
+      "RealBallField.interval",
+      "RealBall.overlaps",
+      "RealBall.contains_zero"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.flexrilog-order-five-symmetry",
+  "title": "Certify an order-five symmetry of a rigidity graph",
+  "domains": ["groups", "combin", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2003-12029-order-five-graph-symmetry",
+    "kind": "paper",
+    "citation": "Georg Grasegger and Jan Legersky, FlexRiLoG -- A SageMath Package for Motions of Graphs, arXiv:2003.12029; Rotationally_symmetric_frameworks_SoCGmedia.ipynb at commit f79b232d3ab02aea5351f9f3de9da23cd8b3a2e6",
+    "url": "https://arxiv.org/abs/2003.12029",
+    "license": "arXiv nonexclusive distribution license; companion repository GPL-3.0-or-later",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "afdb89e03f784994ef68a9caad6867df174eae242cb2eddf1774458a7c9d4db0"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The finite edge list and displayed rotation are independently entered. Noether computes the full graph automorphism group and verifies membership of the rotation."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Graph.automorphism_group", "groups.Permutation.from_images", "groups.PermutationGroup.from_generators", "groups.PermutationGroup.contains", "groups.PermutationGroup.orbit"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

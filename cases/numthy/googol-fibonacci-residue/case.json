@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "numthy.googol-fibonacci-residue",
+  "title": "Compute Fibonacci number F_(10^100) modulo 1000",
+  "domains": ["numthy", "commalg"],
+  "source": {"intake_id": "arxiv-1311-4776-googol-fibonacci-modulus", "kind": "paper", "citation": "Eric Rowland and Doron Zeilberger, A Case Study in Meta-AUTOMATION, arXiv:1311.4776", "url": "https://arxiv.org/abs/1311.4776", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "52ce616cd099d5d19098299c843c063d33a99182a1960e9d3fa989e2ccc6a748"},
+  "translation": {"kind": "translation", "notes": "The standard parity-split fast-doubling recurrence is evaluated inside Z/1000Z so no astronomical integer is materialized."},
+  "noether": {"version": "0.3.2", "operations": ["commalg.ResidueRing.zero", "commalg.ResidueRing.one", "commalg.ResidueClass.representative"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

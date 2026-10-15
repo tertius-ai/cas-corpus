@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "linalg.monomial-wlp-characteristic",
+  "title": "Test weak Lefschetz behavior of a monomial complete intersection",
+  "domains": [
+    "linalg",
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-1003-0824-monomial-wlp-characteristic",
+    "kind": "paper",
+    "citation": "A note on the weak Lefschetz property of monomial complete intersections in positive characteristic, arXiv:1003.0824",
+    "url": "https://arxiv.org/abs/1003.0824",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "6863d78d16a48965c8d55de73a66be8fe5dcd1d5553ef1fa89590235dacc8011"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "For `K[x,y,z]/(x^4,y^4,z^4)`, the middle multiplication map by `x+y+z` is built explicitly over five prime fields. Its rank drops precisely in the paper’s exceptional characteristics 2 and 5."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "numthy.FiniteField.prime",
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.rank"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 45,
+    "seed": null
+  }
+}

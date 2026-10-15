@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "commalg.zero-dimensional-quotient-minpoly",
+  "title": "Compute minimal polynomials in a zero-dimensional quotient",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-1611-07306-zero-dimensional-quotient-minpoly",
+    "kind": "paper",
+    "citation": "John Abbott and Anna Maria Bigatti, Groebner Bases for Everyone with CoCoA-5 and CoCoALib, arXiv:1611.07306",
+    "url": "https://arxiv.org/abs/1611.07306",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b8afb61c13c4a931d8377a4eeecfec16046153571ec0dd14fabb4de6a6dfbe53"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "For the source’s zero-dimensional ideal, eliminating `y,z` produces the principal intersection `I ∩ Q[x] = (x^6-1)`. This is exactly its first quotient minimal-polynomial example."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.eliminate",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Polynomial.terms"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 45,
+    "seed": null
+  }
+}

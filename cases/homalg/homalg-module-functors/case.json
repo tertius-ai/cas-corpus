@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.homalg-module-functors",
+  "title": "Compute Hom and Ext of presented polynomial modules",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-math-0701146-homalg-module-functors",
+    "kind": "paper",
+    "citation": "Homalg: A meta-package for homological algebra, arXiv:math/0701146",
+    "url": "https://arxiv.org/abs/math/0701146",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "a2b3100fc62735f50ff1c96fa526709d03ee296e1154a2eafa7eaa2ee902f37a"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "The recovered Hom worksheet's two Q[x,y,z]-module presentations are retained. Noether computes Hom and the first two Ext modules; its nonminimal presentation differs from the historical display, so invariant ranks, vanishing and the Hom annihilator are recorded."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.hom", "homalg.PresentedModule.ext", "homalg.PresentedModule.annihilator"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

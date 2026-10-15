@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.hurwitz-degree-nine-generating-triple",
+  "title": "Certify a degree-nine Hurwitz generating triple",
+  "domains": ["groups", "combin"],
+  "source": {
+    "intake_id": "arxiv-1512-07657-hurwitz-branching-data",
+    "kind": "paper",
+    "citation": "Branching data for curves up to genus 48, arXiv:1512.07657",
+    "url": "https://arxiv.org/abs/1512.07657",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "80429f82490279db6b410fa7c029955aef201dddd321fcdc3e178e3ed44d8adb"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The first degree-nine generating vector in the paper's `(504,156)` Hurwitz record is converted from one-based images. Element orders, product-one, transitivity, group order, and the genus-seven Riemann-Hurwitz equation are checked exactly."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["groups.Permutation.from_images", "groups.Permutation.order", "groups.PermutationGroup.from_generators", "groups.PermutationGroup.order", "groups.PermutationGroup.is_transitive"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

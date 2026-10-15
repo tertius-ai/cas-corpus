@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.degree-eight-permutations-gf11",
+  "title": "Enumerate normalized degree-eight permutation polynomials over GF(11)",
+  "domains": ["numthy", "commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1905-04202-degree8-permutation-census",
+    "kind": "paper",
+    "citation": "Permutation polynomials of degree 8 over finite fields, arXiv:1905.04202",
+    "url": "https://arxiv.org/abs/1905.04202",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "91f792116b6f33d3093188821374a14c0e60493c64ec9dbd79b8932f09f66003"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Algorithm 11 is translated without its CAS-specific helper: enumerate the same normalized coefficients, impose the displayed Hermite-criterion relation, and test the permutation property by exact evaluation on all eleven field elements."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "commalg.PolynomialRing.generator", "commalg.Polynomial.evaluate"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 90, "seed": null}
+}

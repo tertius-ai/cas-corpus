@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.matroid-intersection-form-rank",
+  "title": "Certify the rank and determinant of a matroid intersection form",
+  "domains": ["linalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-2308-07459-matroid-intersection-form",
+    "kind": "paper",
+    "citation": "Taylor Brysiewicz and Michael Joswig, Polyhedral Geometry in OSCAR, arXiv:2308.07459; heron-rota-welsh.ipynb at micjoswig/oscar-notebooks commit b904e9172ee169eac3b5ef8ad8b08d1d09faa82f",
+    "url": "https://arxiv.org/abs/2308.07459",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "c326d21999e15d6dc69722f1f288a9ee9f08e5da2a4ff1d248384e6c1664fdda"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The eight-by-eight integer matrix printed by the OSCAR notebook is transcribed exactly. Noether certifies that it is unimodular and has full rank."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.rank", "linalg.Matrix.det"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 10, "seed": null}
+}

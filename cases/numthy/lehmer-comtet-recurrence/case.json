@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "numthy.lehmer-comtet-recurrence",
+  "title": "Verify Mathar's recurrence for Lehmer-Comtet diagonal A045406",
+  "domains": [
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-2605-12839-lehmer-comtet-recurrence",
+    "kind": "paper",
+    "citation": "Tong Niu, A short proof of Mathar's 2021 recurrence conjecture for the Lehmer-Comtet diagonal A045406, arXiv:2605.12839",
+    "url": "https://arxiv.org/abs/2605.12839",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d06bd50c8ac0ac9780549f58583c7cf2da5c8fd90f1b627e8c035325954f9819"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The exact harmonic-number closed form, including its exceptional initial value, reproduces the source prefix and makes every recurrence check an equality in `Q`."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "RationalField.__call__"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

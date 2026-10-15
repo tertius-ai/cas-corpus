@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "topology.incremental-dialogue-nerve",
+  "title": "Build a finite nerve incrementally and certify its homology",
+  "domains": ["topology", "combin", "homalg"],
+  "source": {"intake_id": "arxiv-2506-00615-incremental-dialogue-nerve", "kind": "paper", "citation": "An Incremental Framework for Topological Dialogue Semantics, arXiv:2506.00615", "url": "https://arxiv.org/abs/2506.00615", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "462cd86e529b87c8ffab9ed116fa45d5a8eff5cd0a46d5838226a78bd6573bfa"},
+  "translation": {"kind": "translation", "notes": "The three displayed sets are processed both from scratch and incrementally. Their identical nerve is passed to Noether for exact face and integral-homology checks."},
+  "noether": {"version": "0.3.2", "operations": ["topology.SimplicialComplex.facets", "topology.SimplicialComplex.count", "topology.SimplicialComplex.euler_characteristic", "topology.SimplicialComplex.homology_invariants", "homalg.FinitelyGeneratedAbelianGroup.verify"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

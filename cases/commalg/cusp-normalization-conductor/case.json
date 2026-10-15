@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.cusp-normalization-conductor",
+  "title": "Normalize a cusp and certify its conductor",
+  "domains": ["commalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-0904-3561-cusp-normalization-conductor",
+    "kind": "paper",
+    "citation": "Gert-Martin Greuel, Santiago Laplagne, and Frank Seelisch, Normalization of Rings, arXiv:0904.3561",
+    "url": "https://arxiv.org/abs/0904.3561",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b88227cf4aa524af971799a86099823c3e75e7a2bcfdfe7d8ce26407a87a5792"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's cusp equation and test ideal are entered independently. Noether computes and verifies the normalization Q[t], coordinate images x=t^3 and y=t^2, and source conductor (x,y). This external computation supersedes the Noether-authored API seed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["commalg.PolynomialRing.generators", "commalg.Ideal.normalization", "commalg.AffineNormalization.verify", "commalg.AffineNormalization.coordinate_images", "commalg.AffineNormalization.source_conductor"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

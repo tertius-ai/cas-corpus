@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "commalg.binomial-primary-decomposition",
+  "title": "Certify a primary decomposition of a binomial ideal",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-1106-5968-binomial-primary-decomposition",
+    "kind": "paper",
+    "citation": "Thomas Kahle, Decompositions of Binomial Ideals in Macaulay 2, arXiv:1106.5968",
+    "url": "https://arxiv.org/abs/1106.5968",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-25",
+    "sha256": "429501fb1c162128ed1112b3b1c1385a831554e907510c984f5ebb7abc524052"
+  },
+  "translation": {
+    "kind": "adaptation",
+    "notes": "This independently written bounded example exercises the decomposition and certificate surface introduced in Noether 0.2. It uses the intake record's hand-checkable binomial ideal rather than copying source code or prose."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.primary_decomposition",
+      "commalg.PrimaryDecomposition.verify",
+      "commalg.PolynomialPrimaryCertificate.verify",
+      "commalg.PolynomialPrimeCertificate.verify",
+      "commalg.Ideal.reduce",
+      "commalg.IdealReduction.verify",
+      "commalg.IdealReduction.is_member"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

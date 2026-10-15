@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "commalg.cyclotomic-sequence-linear-complexity",
+  "title": "Verify an order-eight cyclotomic-sequence linear complexity",
+  "domains": ["commalg", "numthy"],
+  "source": {
+    "intake_id": "arxiv-1802-08105-cyclotomic-sequence-linear-complexity",
+    "kind": "paper",
+    "citation": "Linear complexity of Ding-Helleseth generalized cyclotomic sequences of order eight, arXiv:1802.08105",
+    "url": "https://arxiv.org/abs/1802.08105",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "f36106ef113eefa5506e4913fe35184f79381c127e92f31b437f8e7781e3d10f"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's two Sage routines are specialized to p=17 and q=41. The CRT cyclotomic generating polynomial gives complexity 696 by polynomial gcd, independently agreeing with the theorem's discrete-log formula."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.prime", "commalg.Polynomial.gcd", "commalg.Polynomial.degree"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

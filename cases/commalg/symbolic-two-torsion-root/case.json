@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "commalg.symbolic-two-torsion-root",
+  "title": "Verify a symbolic two-torsion section of an elliptic Jacobian",
+  "domains": [
+    "commalg",
+    "numthy"
+  ],
+  "source": {
+    "intake_id": "arxiv-2512-11072-symbolic-two-torsion-root",
+    "kind": "paper",
+    "citation": "Valery Asiryan, Genus-One Fibrations and the Jacobian of Linear Slices in the Quintic Equal-Sum Problem, arXiv:2512.11072",
+    "url": "https://arxiv.org/abs/2512.11072",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "ba3d811668dd8ec5a8d50abab6954099339c8a95e64cb99e2a175ba49743b8d1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The binary-quartic invariants are formed in `Q[S]`, and direct substitution verifies the paper’s displayed root of the Jacobian cubic. This proves the scoped polynomial identity; it does not substitute for the paper’s complete torsion argument."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generator",
+      "commalg.PolynomialRing.zero",
+      "commalg.Polynomial.__pow__"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.s4-squarefree-quadratic-resolution",
+  "title": "Resolve the S4-stable squarefree quadratic ideal",
+  "domains": ["homalg", "commalg", "groups", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2106-16062-squarefree-quadratic-resolution",
+    "kind": "paper",
+    "citation": "Federico Galetto, Setting the scene for Betti characters, arXiv:2106.16062",
+    "url": "https://arxiv.org/abs/2106.16062",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "89d1901f2ef2583fdaa86fc386ba6f4c52850501111ad8f7230507bef2d041ee"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Noether certifies the underlying minimal resolution and its published Betti totals (1,6,8,3). Lifting the S4 action to that resolution and recovering the four character rows remains the paper-level blocker."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

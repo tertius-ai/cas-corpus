@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.triangular-strip-chromatic-transfer",
+  "title": "Compute a triangular-strip chromatic polynomial by transfer matrix",
+  "domains": ["linalg", "commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-cond-mat-0204587-triangular-strip-chromatic-transfer",
+    "kind": "paper",
+    "citation": "Jesper Lykke Jacobsen, Jesús Salas, and Alan D. Sokal, Transfer Matrices and Partition-Function Zeros for Antiferromagnetic Potts Models III: Triangular-Lattice Chromatic Polynomial, arXiv:cond-mat/0204587",
+    "url": "https://arxiv.org/abs/cond-mat/0204587",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "57869f4d4aab354b8d2eefdfec6a2af24b6984069a53a1bf3558f5f20b1c43b1"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The published width-three free-boundary transfer matrix and vectors are encoded over Z[q]. Computing V T^2 U gives the exact length-three strip polynomial and verifies its evaluations at two, three and four colors."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.matmul", "commalg.Polynomial.evaluate"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

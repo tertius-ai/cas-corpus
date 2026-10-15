@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "commalg.mobius-truncated-ring-identities",
+  "title": "Verify Mobius-generator identities modulo t^22",
+  "domains": ["commalg"],
+  "source": {
+    "intake_id": "arxiv-2603-00886-mobius-identities",
+    "kind": "paper",
+    "citation": "David Turturean, Explicit deformation of a spider algebra to a curvilinear scheme via Mobius generators, arXiv:2603.00886",
+    "url": "https://arxiv.org/abs/2603.00886",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "4c36b3984b9e5a525a6db4aa01c94606f29ff26cd685cac791310ca88a840062"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The finite geometric-series presentation of u_a=t/(1-at) in Q[t]/(t^22) and the source's basic two-generator relation are restated exactly."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generator",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.normal_form"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

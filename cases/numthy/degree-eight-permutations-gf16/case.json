@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "numthy.degree-eight-permutations-gf16",
+  "title": "Enumerate normalized degree-eight permutation polynomials over GF(16)",
+  "domains": ["numthy", "commalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-1903-10309-gf16-degree8-permutation-census",
+    "kind": "paper",
+    "citation": "Xiang Fan, Permutation polynomials of degree 8 over finite fields of characteristic 2, arXiv:1903.10309",
+    "url": "https://arxiv.org/abs/1903.10309",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "98eab1f8afb8e66d903afeb1a094707e6580c4d12bd5eb56d5ccd78fa429853d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's two normalized coefficient families are replayed over its explicit GF(16) presentation. Every candidate is checked by exact evaluation on all sixteen elements."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["numthy.FiniteField.with_modulus", "commalg.PolynomialRing.generator", "commalg.Polynomial.evaluate"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 120, "seed": null}
+}

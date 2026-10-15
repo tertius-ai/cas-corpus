@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "commalg.reversible-binary-recurrence",
+  "title": "Verify Mathar's recurrence for reversible binary strings A032123",
+  "domains": [
+    "commalg",
+    "combin"
+  ],
+  "source": {
+    "intake_id": "arxiv-2605-14213-reversible-binary-recurrence",
+    "kind": "paper",
+    "citation": "Tong Niu, A short proof of Mathar's 2013 recurrence conjecture for the reversible-binary-string sequence A032123, arXiv:2605.14213",
+    "url": "https://arxiv.org/abs/2605.14213",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "0e45be1fa90d2fcdbadce9521b433f87999d545d63fb53ae826e67094df0f492"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Burnside’s parity-split binomial formula is evaluated exactly, stored as a Noether generating polynomial, and checked against the source’s order-five recurrence."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.from_terms",
+      "commalg.Polynomial.coefficient"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 30,
+    "seed": null
+  }
+}

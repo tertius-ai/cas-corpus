@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.codepth-three-resolution",
+  "title": "Resolve a quotient from a codepth-three classification",
+  "domains": ["homalg", "commalg", "linalg"],
+  "source": {
+    "intake_id": "arxiv-1402-4052-codepth-three-resolution",
+    "kind": "paper",
+    "citation": "Lars Winther Christensen and Oana Veliche, Local rings of embedding codepth 3: a classification algorithm, arXiv:1402.4052",
+    "url": "https://arxiv.org/abs/1402.4052",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "20c8797ac318259c0bb6eebe282d77be7e51639db8fa467ee568833d4f00241a"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The five homogeneous generators are entered from the paper's Macaulay2 example. Noether certifies its minimal graded resolution and the ranks m=5 and n=2 used by the classification. The multiplicative Tor-algebra invariants p, q, and r and the final class G(2) remain outside this scoped case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 60, "seed": null}
+}

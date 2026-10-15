@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "id": "commalg.boolean-groebner-basis",
+  "title": "Certify a Boolean Groebner basis over F2",
+  "domains": ["commalg"],
+  "source": {"intake_id": "arxiv-1010-2669-boolean-groebner-basis", "kind": "paper", "citation": "Franziska Hinkelmann and Elizabeth Arnold, Fast Gröbner Basis Computation for Boolean Polynomials, arXiv:1010.2669", "url": "https://arxiv.org/abs/1010.2669", "license": "arXiv nonexclusive distribution license", "redistribution": "citation-only", "retrieved_at": "2026-08-26", "sha256": "299c70c1a4db601ad9be85991ca07a991f04fb380e05c51bd9e1b680129b6068"},
+  "translation": {"kind": "translation", "notes": "The displayed Boolean ideal and basis are restated with field equations in an ordinary F2 polynomial ring, then compared by mutual reductions."},
+  "noether": {"version": "0.3.2", "operations": ["numthy.FiniteField.prime", "commalg.PolynomialRing.ideal", "commalg.Ideal.groebner_basis", "commalg.Ideal.normal_form"]},
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

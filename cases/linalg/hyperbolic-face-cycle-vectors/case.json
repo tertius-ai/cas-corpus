@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "linalg.hyperbolic-face-cycle-vectors",
+  "title": "Enumerate short vectors in a face-cycle lattice",
+  "domains": ["linalg", "numthy", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1409-1910-hyperbolic-face-cycle-vectors",
+    "kind": "paper",
+    "citation": "Symmetries of hyperbolic 4-manifolds, arXiv:1409.1910",
+    "url": "https://arxiv.org/abs/1409.1910",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "d64d1e7b848258c2e2b36355df452c6a219e891761ec129e4d401438165830b0"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "Appendix B's n=0 quadratic form is represented exactly over Q. Sylvester's criterion certifies positivity, and an exact rational-square test replaces the Sage routine's floating integrality test while reproducing its four vectors."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.from_rows", "linalg.Matrix.det"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

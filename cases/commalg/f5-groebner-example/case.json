@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "commalg.f5-groebner-example",
+  "title": "Reproduce an F5 Gröbner-basis example",
+  "domains": [
+    "commalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-0804-2033-f5-groebner-example",
+    "kind": "paper",
+    "citation": "On The Criteria Of The F5 Algorithm, arXiv:0804.2033",
+    "url": "https://arxiv.org/abs/0804.2033",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "b2d1350c75bd1dee63697bf5cbde9441e3974edcaa3c438654a8e850eeb5e7f3"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The three input polynomials and eight printed F5 outputs are transcribed directly. Noether computes an eight-element Gröbner basis and certifies mutual ideal containment, without claiming to reproduce F5’s internal signature path."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.groebner_basis",
+      "commalg.Ideal.normal_form",
+      "commalg.Ideal.verify"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 45,
+    "seed": null
+  }
+}

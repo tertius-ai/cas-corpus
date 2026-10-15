@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "topology.hollow-triangle-homology",
+  "title": "Integral homology of a hollow triangle",
+  "domains": [
+    "topology",
+    "homalg"
+  ],
+  "source": {
+    "intake_id": "arxiv-2608-14240-hollow-triangle-homology",
+    "kind": "paper",
+    "citation": "Naman Taggar, SimplicialHomology: implementation of abstract simplicial complex in Mathematica, arXiv:2608.14240",
+    "url": "https://arxiv.org/abs/2608.14240",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3327ba881e72b2a17b442f18894f070d4b2247773c936fc5ed586481b1546033"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's three-edge hollow triangle is independently constructed in Noether and its integral homology is verified. The explanatory prose and program are original; no paper or repository source is redistributed."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "topology.SimplicialComplex.verify",
+      "topology.SimplicialComplex.count",
+      "topology.SimplicialComplex.euler_characteristic",
+      "topology.SimplicialComplex.homology_invariants",
+      "homalg.FinitelyGeneratedAbelianGroup.verify"
+    ]
+  },
+  "execution": {
+    "entrypoint": "solution.py",
+    "timeout_seconds": 10,
+    "seed": null
+  }
+}

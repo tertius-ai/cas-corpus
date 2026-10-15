@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "groups.lr-ray-symmetry-group",
+  "title": "Certify the 144 symmetries of the SL3 LR chamber rays",
+  "domains": ["groups", "linalg", "combin"],
+  "source": {
+    "intake_id": "arxiv-2004-04995-lr-ray-symmetry-group",
+    "kind": "paper",
+    "citation": "Emmanuel Briand and Mercedes Rosas, The 144 symmetries of the Littlewood-Richardson coefficients of SL3, arXiv:2004.04995",
+    "url": "https://arxiv.org/abs/2004.04995",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "cde43c67ecf7409a9a336a03c8ff26d2d04fdecae48c381faa8be9eda1378ada"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The notebook's nine rays and four generators are retained. Exact rational linear algebra constructs their Gram projector; every one of the 144 group elements preserves it, and the first listed chamber has the expected orbit of size 18."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["linalg.Matrix.solve", "groups.PermutationGroup.from_generators", "groups.PermutationGroup.iterate_elements", "groups.PermutationGroup.orbit_of_subset"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

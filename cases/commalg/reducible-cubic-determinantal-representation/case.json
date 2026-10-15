@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "commalg.reducible-cubic-determinantal-representation",
+  "title": "Certify a symmetric determinant for a reducible plane cubic",
+  "domains": ["commalg", "linalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-1905-07035-reducible-cubic-determinantal-representation",
+    "kind": "paper",
+    "citation": "Justin Chen and Papri Dey, Computing symmetric determinantal representations, arXiv:1905.07035",
+    "url": "https://arxiv.org/abs/1905.07035",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "65bb819930a60e6ae20b0718ab5059aa9b14b8f9e053c8dcc48f2b760afa0e3d"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The paper's displayed factorization and diagonal symmetric pencil are restated as exact mathematical data."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.Polynomial.factor",
+      "commalg.PolynomialFactorization.verify",
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.det"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 20, "seed": null}
+}

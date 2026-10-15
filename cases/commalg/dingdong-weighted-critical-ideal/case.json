@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "commalg.dingdong-weighted-critical-ideal",
+  "title": "Recover the weighted critical ideal of the Dingdong surface",
+  "domains": ["commalg", "linalg", "geometry"],
+  "source": {
+    "intake_id": "arxiv-2607-13277-dingdong-weighted-critical-ideal",
+    "kind": "paper",
+    "citation": "William Huang and Jose Israel Rodriguez, Euclidean Distance Degrees in Macaulay2, arXiv:2607.13277",
+    "url": "https://arxiv.org/abs/2607.13277",
+    "license": "CC BY 4.0",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "18b2138de66e3dffeb055039c4a133d40b685208e02fdb76d5788593bac50b49"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The displayed surface, data, weights, and four output generators are restated as mathematics. Noether independently forms Jacobian minors and saturates by the singular ideal."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "commalg.Polynomial.derivative",
+      "commalg.PolynomialRing.ideal",
+      "commalg.Ideal.saturate",
+      "commalg.Ideal.normal_form",
+      "commalg.Ideal.dimension",
+      "commalg.Ideal.degree"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

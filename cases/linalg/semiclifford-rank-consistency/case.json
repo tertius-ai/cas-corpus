@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "linalg.semiclifford-rank-consistency",
+  "title": "Certify a symbolic rank bound from vanishing maximal minors",
+  "domains": ["linalg", "commalg"],
+  "source": {
+    "intake_id": "github-semiclifford-rank-consistency",
+    "kind": "notebook",
+    "citation": "Nadish de Silva, semiclifford commit 7d318ea450eb7c1aa1b960914d2e55df208120f1, ConsistencyCheck.nb",
+    "url": "https://github.com/ndesilva/semiclifford/blob/7d318ea450eb7c1aa1b960914d2e55df208120f1/ConsistencyCheck.nb",
+    "license": "No license file found; mathematical matrix cited without notebook redistribution",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "3e522e313868f400a5c67c1f7298c620f90ea7b28092554421e061968f6f2881"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The notebook's displayed 6-by-8 polynomial matrix is restated as mathematical data. All 28 maximal minors are recomputed rather than copying Mathematica output."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": [
+      "commalg.PolynomialRing.generators",
+      "linalg.Matrix.from_rows",
+      "linalg.Matrix.det",
+      "commalg.Polynomial.is_zero"
+    ]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "combin.oscar-four-element-matroid",
+  "title": "Recover the circuits of a four-element matroid from its bases",
+  "domains": ["combin"],
+  "source": {
+    "intake_id": "arxiv-2311-08792-four-element-matroid",
+    "kind": "paper",
+    "citation": "Daniel Corey, Lukas Kuhne, and Benjamin Schroter, Matroids in OSCAR, arXiv:2311.08792",
+    "url": "https://arxiv.org/abs/2311.08792",
+    "license": "arXiv nonexclusive distribution license",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "891927caf8de1a1cec346e98fd726ca11024854a1a84600600c4159f1d1b39c3"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The five displayed bases are entered independently. Noether reconstructs the matroid, its ranks and exactly the three source circuits. The paper's realization-space calculations remain a separate blocked-feature record."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["combin.Matroid.from_bases", "combin.Matroid.bases", "combin.Matroid.rank", "combin.Matroid.circuits", "combin.Matroid.tutte_polynomial"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}

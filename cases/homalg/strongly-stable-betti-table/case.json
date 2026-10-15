@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "homalg.strongly-stable-betti-table",
+  "title": "Resolve a strongly stable ideal from weighted Borel generators",
+  "domains": ["homalg", "commalg", "combin", "linalg"],
+  "source": {
+    "intake_id": "arxiv-2408-04120-strongly-stable-betti-table",
+    "kind": "paper",
+    "citation": "Seth Ireland, Weighted Borel Generators, arXiv:2408.04120",
+    "url": "https://arxiv.org/abs/2408.04120",
+    "license": "Creative Commons Attribution 4.0 International",
+    "redistribution": "citation-only",
+    "retrieved_at": "2026-08-26",
+    "sha256": "2d35c475530c2b4db4a4c589e7d2043b25fe745871865d854ef444a54c68f3ac"
+  },
+  "translation": {
+    "kind": "translation",
+    "notes": "The source's Borel closure is entered as its nine minimal monomial generators. Noether independently resolves the quotient and verifies the resulting Betti table; computing the weighted Borel closure itself remains outside this case."
+  },
+  "noether": {
+    "version": "0.3.2",
+    "operations": ["homalg.PresentedModule.minimal_free_resolution", "homalg.FreeResolution.verify", "homalg.FreeResolution.is_minimal", "homalg.FreeResolution.graded_betti_table", "homalg.GradedBettiTable.verify", "homalg.GradedBettiTable.total"]
+  },
+  "execution": {"entrypoint": "solution.py", "timeout_seconds": 30, "seed": null}
+}
