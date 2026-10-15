@@ -35,6 +35,10 @@ Run structural checks with:
 python3 tools/check_cases.py
 ```
 
+Pull requests run these structural checks in GitHub Actions. They do not execute
+the mathematics. Before merging case changes, also run the execution check below
+against the exact Noether source release.
+
 Noether 0.3.2 is a source-only release. Build that tag using its documented
 `make sync && make engine` workflow, then invoke this repository's checker with
 the resulting Python environment:
